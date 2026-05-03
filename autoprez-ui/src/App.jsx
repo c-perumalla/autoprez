@@ -56,7 +56,7 @@ export default function App() {
     // Setup WebSocket
     connectWebSocket()
 
-    // Setup keydown listener for manual advance
+    // Setup keydown listener for manual advance/revert
     const handleKeyDown = async (e) => {
       if ((e.key === 'Enter' || e.key === 'ArrowDown')) {
         e.preventDefault() // prevent scrolling
@@ -64,6 +64,13 @@ export default function App() {
           await fetch('http://localhost:9000/advance', { method: 'POST' })
         } catch (err) {
           console.error("Failed to advance:", err)
+        }
+      } else if (e.key === 'ArrowUp') {
+        e.preventDefault() // prevent scrolling
+        try {
+          await fetch('http://localhost:9000/revert', { method: 'POST' })
+        } catch (err) {
+          console.error("Failed to revert:", err)
         }
       }
     }

@@ -313,6 +313,50 @@ class LyricMatcher(TranscriptEventListener):
                 except Exception as e:
                     print(f"  (server not running: {e})")
 
+    def force_revert(self):
+        """Force revert to the previous line."""
+        with self.lock:
+            if self.current_line_idx > 0:
+                self.current_line_idx -= 1
+                self.finished = False
+
+                if self.test_mode:
+                    elapsed = self.audio_position
+                else:
+                    elapsed = time.time() - self.start_time
+
+                print(f"\n---- MANUAL REVERT! | t={elapsed:.1f}s ----")
+
+                self.last_transition_time = time.time()
+                self.last_transition_audio_pos = self.audio_position
+
+                # Reset buffers
+                self.completed_phrases = []
+                self.current_line_text = ""
+
+                # Remove last entry in log
+                if self.transition_log and len(self.transition_log) > 1:
+                    self.transition_log.pop()
+
+                next_line_text = self.lyrics[self.current_line_idx]
+                self._print_current_target()
+
+                # Notify the server
+                if not self.test_mode:
+                    try:
+                        req = urllib.request.Request("http://127.0.0.1:9000/transition")
+                        req.add_header('Content-Type', 'application/json; charset=utf-8')
+                        payload = json.dumps({
+                            "action": "transition_slide",
+                            "next_line": next_line_text,
+                            "line_index": self.current_line_idx,
+                            "latency_metric": "revert"
+                        }).encode('utf-8')
+                        req.add_header('Content-Length', str(len(payload)))
+                        urllib.request.urlopen(req, payload)
+                    except Exception as e:
+                        print(f"  (server not running: {e})")
+
     def save_results(self):
         """Write transition log to the output file."""
         if self.output_file:
@@ -389,6 +433,8 @@ def listen_to_stdin(matcher):
         cmd = line.strip()
         if cmd == "NEXT":
             matcher.force_transition()
+        elif cmd == "PREV":
+            matcher.force_revert()
 
 def main():
     parser = argparse.ArgumentParser(description='Autoprez — Moonshine Voice v2')

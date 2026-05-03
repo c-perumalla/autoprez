@@ -136,6 +136,18 @@ async def manual_advance():
             return {"status": f"error: {e}"}
     return {"status": "not running"}
 
+@app.post("/revert")
+async def manual_revert():
+    global matcher_process
+    if matcher_process and matcher_process.poll() is None:
+        try:
+            matcher_process.stdin.write(b"PREV\n")
+            matcher_process.stdin.flush()
+            return {"status": "reverted"}
+        except Exception as e:
+            return {"status": f"error: {e}"}
+    return {"status": "not running"}
+
 @app.post("/stop")
 async def stop_matcher():
     global matcher_process
