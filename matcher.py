@@ -21,6 +21,7 @@ import argparse
 import urllib.request
 import json
 import re
+import threading
 
 from moonshine_voice.transcriber import Transcriber, TranscriptEventListener
 from moonshine_voice.utils import load_wav_file
@@ -116,6 +117,7 @@ class LyricMatcher(TranscriptEventListener):
         self.test_mode = test_mode
         self.transition_log = []  # [(line_num, timestamp)]
         self.finished = False
+        self.lock = threading.Lock()
 
         # Accumulated transcript since last transition
         self.completed_phrases = []  # completed Moonshine lines
@@ -152,64 +154,133 @@ class LyricMatcher(TranscriptEventListener):
 
     def _check_match(self):
         """Check if the accumulated transcript matches the expected line using both methods."""
-        if self.current_line_idx >= len(self.lyrics) or self.finished:
-            return
+        with self.lock:
+            if self.current_line_idx >= len(self.lyrics) or self.finished:
+                return
 
-        # Check min time on line
-        if self.test_mode:
-            time_on_line = self.audio_position - self.last_transition_audio_pos
-        else:
-            time_on_line = time.time() - self.last_transition_time
+            # Check min time on line
+            if self.test_mode:
+                time_on_line = self.audio_position - self.last_transition_audio_pos
+            else:
+                time_on_line = time.time() - self.last_transition_time
 
-        if time_on_line < self.min_time_on_line:
-            return
+            if time_on_line < self.min_time_on_line:
+                return
 
-        accumulated = self._get_accumulated_text()
-        if not accumulated.strip():
-            return
+            accumulated = self._get_accumulated_text()
+            if not accumulated.strip():
+                return
 
-        expected_words = self._get_expected_words()
-        transcript_words = normalize_text(accumulated).split()
+            expected_words = self._get_expected_words()
+            transcript_words = normalize_text(accumulated).split()
 
-        # Method 1: Sequential ordered word matching
-        matched, match_ratio = sequential_word_match(
-            expected_words, transcript_words, self.word_tolerance
-        )
-        seq_pct = match_ratio * 100
+            # Method 1: Sequential ordered word matching
+            matched, match_ratio = sequential_word_match(
+                expected_words, transcript_words, self.word_tolerance
+            )
+            seq_pct = match_ratio * 100
 
-        # Method 2: Fuzzy partial_ratio on the trigger phrase as backup
-        trigger_phrase = " ".join(expected_words)
-        fuzzy_score = fuzz.partial_ratio(trigger_phrase.lower(), accumulated.lower())
+            # Method 2: Fuzzy partial_ratio on the trigger phrase as backup
+            trigger_phrase = " ".join(expected_words)
+            fuzzy_score = fuzz.partial_ratio(trigger_phrase.lower(), accumulated.lower())
 
-        # Trigger if EITHER method passes the threshold
-        # Sequential matching is preferred (more precise), fuzzy is fallback
-        triggered = False
-        method_used = ""
+            # Trigger if EITHER method passes the threshold
+            # Sequential matching is preferred (more precise), fuzzy is fallback
+            triggered = False
+            method_used = ""
 
-        if seq_pct >= self.min_match_pct:
-            triggered = True
-            method_used = f"seq={seq_pct:.0f}%({matched}/{len(expected_words)})"
-        elif fuzzy_score >= max(self.min_match_pct + 10, 80):
-            # Fuzzy needs a higher bar to avoid false positives
-            triggered = True
-            method_used = f"fuzzy={fuzzy_score:.0f}%"
+            if seq_pct >= self.min_match_pct:
+                triggered = True
+                method_used = f"seq={seq_pct:.0f}%({matched}/{len(expected_words)})"
+            elif fuzzy_score >= max(self.min_match_pct + 10, 80):
+                # Fuzzy needs a higher bar to avoid false positives
+                triggered = True
+                method_used = f"fuzzy={fuzzy_score:.0f}%"
 
-        if triggered:
+            if triggered:
+                if self.test_mode:
+                    elapsed = self.audio_position
+                else:
+                    elapsed = time.time() - self.start_time
+
+                print(f"\n---- TRANSITION! {method_used} | Time: {time_on_line:.1f}s | t={elapsed:.1f}s ----")
+
+                # Store transcript for WER
+                self.per_line_transcripts[self.current_line_idx] = accumulated.strip()
+
+                self.current_line_idx += 1
+                self.last_transition_time = time.time()
+                self.last_transition_audio_pos = self.audio_position
+
+                # Reset buffers
+                self.completed_phrases = []
+                self.current_line_text = ""
+
+                # Log the transition
+                next_line_num = self.current_line_idx + 1  # 1-indexed
+                self.transition_log.append((next_line_num, round(elapsed, 2)))
+
+                next_line_text = ""
+                if self.current_line_idx < len(self.lyrics):
+                    next_line_text = self.lyrics[self.current_line_idx]
+                    self._print_current_target()
+                else:
+                    print("Finished all lyrics!")
+                    next_line_text = "END_OF_SONG"
+                    self.finished = True
+
+                # Notify the server (skip in test mode)
+                if not self.test_mode:
+                    try:
+                        req = urllib.request.Request("http://127.0.0.1:9000/transition")
+                        req.add_header('Content-Type', 'application/json; charset=utf-8')
+                        payload = json.dumps({
+                            "action": "transition_slide",
+                            "next_line": next_line_text,
+                            "line_index": self.current_line_idx,
+                            "latency_metric": f"{time_on_line:.2f}s"
+                        }).encode('utf-8')
+                        req.add_header('Content-Length', str(len(payload)))
+                        urllib.request.urlopen(req, payload)
+                    except Exception as e:
+                        print(f"  (server not running: {e})")
+
+    def _send_transcript_update(self):
+        if not self.test_mode:
+            try:
+                req = urllib.request.Request("http://127.0.0.1:9000/transition")
+                req.add_header('Content-Type', 'application/json; charset=utf-8')
+                payload = json.dumps({
+                    "action": "transcript_update",
+                    "text": self._get_accumulated_text()
+                }).encode('utf-8')
+                req.add_header('Content-Length', str(len(payload)))
+                urllib.request.urlopen(req, payload)
+            except Exception:
+                pass
+
+    def force_transition(self):
+        """Force a slide transition bypassing all matching logic and time limits."""
+        with self.lock:
+            if self.current_line_idx >= len(self.lyrics) or self.finished:
+                return
+                
             if self.test_mode:
                 elapsed = self.audio_position
             else:
                 elapsed = time.time() - self.start_time
 
-            print(f"\n---- TRANSITION! {method_used} | Time: {time_on_line:.1f}s | t={elapsed:.1f}s ----")
+            print(f"\n---- MANUAL TRANSITION! | t={elapsed:.1f}s ----")
 
-            # Store transcript for WER
+            # Store whatever transcript we had for WER
+            accumulated = self._get_accumulated_text()
             self.per_line_transcripts[self.current_line_idx] = accumulated.strip()
 
             self.current_line_idx += 1
             self.last_transition_time = time.time()
             self.last_transition_audio_pos = self.audio_position
 
-            # Reset buffers
+            # Reset buffers so we don't carry old text to the next line
             self.completed_phrases = []
             self.current_line_text = ""
 
@@ -226,7 +297,7 @@ class LyricMatcher(TranscriptEventListener):
                 next_line_text = "END_OF_SONG"
                 self.finished = True
 
-            # Notify the server (skip in test mode)
+            # Notify the server
             if not self.test_mode:
                 try:
                     req = urllib.request.Request("http://127.0.0.1:9000/transition")
@@ -235,26 +306,12 @@ class LyricMatcher(TranscriptEventListener):
                         "action": "transition_slide",
                         "next_line": next_line_text,
                         "line_index": self.current_line_idx,
-                        "latency_metric": f"{time_on_line:.2f}s"
+                        "latency_metric": "manual"
                     }).encode('utf-8')
                     req.add_header('Content-Length', str(len(payload)))
                     urllib.request.urlopen(req, payload)
                 except Exception as e:
                     print(f"  (server not running: {e})")
-
-    def _send_transcript_update(self):
-        if not self.test_mode:
-            try:
-                req = urllib.request.Request("http://127.0.0.1:9000/transition")
-                req.add_header('Content-Type', 'application/json; charset=utf-8')
-                payload = json.dumps({
-                    "action": "transcript_update",
-                    "text": self._get_accumulated_text()
-                }).encode('utf-8')
-                req.add_header('Content-Length', str(len(payload)))
-                urllib.request.urlopen(req, payload)
-            except Exception:
-                pass
 
     def save_results(self):
         """Write transition log to the output file."""
@@ -325,6 +382,13 @@ class LyricMatcher(TranscriptEventListener):
             self._send_transcript_update()
             self._check_match()
 
+
+def listen_to_stdin(matcher):
+    """Background thread to listen for manual commands from the server."""
+    for line in sys.stdin:
+        cmd = line.strip()
+        if cmd == "NEXT":
+            matcher.force_transition()
 
 def main():
     parser = argparse.ArgumentParser(description='Autoprez — Moonshine Voice v2')
@@ -454,6 +518,10 @@ def main():
         mic_transcriber.add_listener(matcher)
 
         print("Listening... Press Ctrl+C to stop.\n")
+
+        # Start stdin listener thread
+        stdin_thread = threading.Thread(target=listen_to_stdin, args=(matcher,), daemon=True)
+        stdin_thread.start()
 
         try:
             mic_transcriber.start()

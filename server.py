@@ -120,9 +120,21 @@ async def start_matcher(req: StartRequest):
         cmd.extend(["--mic-device", str(req.mic_device)])
         
     print(f"Starting matcher: {' '.join(cmd)}")
-    matcher_process = subprocess.Popen(cmd)
+    matcher_process = subprocess.Popen(cmd, stdin=subprocess.PIPE)
     
     return {"status": "started"}
+
+@app.post("/advance")
+async def manual_advance():
+    global matcher_process
+    if matcher_process and matcher_process.poll() is None:
+        try:
+            matcher_process.stdin.write(b"NEXT\n")
+            matcher_process.stdin.flush()
+            return {"status": "advanced"}
+        except Exception as e:
+            return {"status": f"error: {e}"}
+    return {"status": "not running"}
 
 @app.post("/stop")
 async def stop_matcher():

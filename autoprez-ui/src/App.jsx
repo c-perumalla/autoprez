@@ -56,9 +56,24 @@ export default function App() {
     // Setup WebSocket
     connectWebSocket()
 
+    // Setup keydown listener for manual advance
+    const handleKeyDown = async (e) => {
+      if ((e.key === 'Enter' || e.key === 'ArrowDown')) {
+        e.preventDefault() // prevent scrolling
+        try {
+          await fetch('http://localhost:9000/advance', { method: 'POST' })
+        } catch (err) {
+          console.error("Failed to advance:", err)
+        }
+      }
+    }
+    
+    window.addEventListener('keydown', handleKeyDown)
+
     return () => {
       if (wsRef.current) wsRef.current.close()
       clearInterval(timerRef.current)
+      window.removeEventListener('keydown', handleKeyDown)
     }
   }, [])
   
