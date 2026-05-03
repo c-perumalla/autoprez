@@ -1,0 +1,66 @@
+LINE | EXPECTED | HEARD | WER
+--------------------------------------------------------------------------------
+  1 | Amazing grace how sweet the sound
+    | Uh, mate? Easy and clear.
+    | WER: 100.0%
+
+  2 | That saved a wretch like me
+    | We sing, pray, How sweet the.
+    | WER: 100.0%
+
+  3 | I once was lost but now am found
+    | How sweet the sound That seed
+    | WER: 100.0%
+
+  4 | Was blind but now I see
+    | That seed Uh? Would you like me?
+    | WER: 116.7%
+
+  5 | 'Twas grace that taught my heart to fear
+    | I want him
+    | WER: 100.0%
+
+  6 | And grace my fears relieved
+    | I want hmm hmm Ta-da! And grace be near
+    | WER: 160.0%
+
+  7 | How precious did that grace appear
+    | And grace be the Nope.
+    | WER: 100.0%
+
+  8 | The hour I first believed
+    | (not reached)
+    | WER: N/A
+
+  9 | Through many dangers toils and snares
+    | (not reached)
+    | WER: N/A
+
+ 10 | I have already come
+    | (not reached)
+    | WER: N/A
+
+ 11 | 'Tis grace hath brought me safe thus far
+    | (not reached)
+    | WER: N/A
+
+ 12 | And grace will lead me home
+    | (not reached)
+    | WER: N/A
+
+ 13 | When we've been there ten thousand years
+    | (not reached)
+    | WER: N/A
+
+ 14 | Bright shining as the sun
+    | (not reached)
+    | WER: N/A
+
+ 15 | We've no less days to sing God's praise
+    | (not reached)
+    | WER: N/A
+
+ 16 | Than when we first begun
+    | (not reached)
+    | WER: N/A
+

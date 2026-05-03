@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+websockets
+faster_whisper
+pyaudio
+rapidfuzz
+soundfile
+psutil

@@ -1,0 +1,73 @@
+Loaded 12 lyric lines from /Users/calvinperumalla/personal/git/autoprez/be_thou_my_vision.txt
+Params: threshold=60, trigger_words=3, fuzz=partial_ratio, update_interval=0.5s
+
+[TARGET] -> Be Thou my vision O Lord of my heart
+Test mode: processing /Users/calvinperumalla/personal/git/autoprez/be_thou_my_vision.wav
+[LIVE] me.                              [LIVE] Be.                              [LIVE] Be the...                              [LIVE] Be thou my                              [LIVE] Be Thou my Vision                              [LIVE] Be Thou my vision                              [LIVE] Be Thou my vision.                              [DONE] Be Thou my vision.                              
+[LIVE] Oh.                              [LIVE] O Lord.                              [DONE] O Lord.                              
+[LIVE] of my                              
+---- TRANSITION! Score: 100.0% | Time on line: 7.8s | t=7.8s ----
+
+[TARGET] -> Naught be all else to me save that Thou art
+[LIVE] Of my heart.                              [DONE] Of my heart.                              
+[LIVE] Yeah.                              [LIVE] Nah.                              [DONE] Nah.                              
+[LIVE] I'm sorry.                              [LIVE] I'll be.                              [LIVE] I'll be your                              [LIVE] I'll be all right.                              [DONE] I'll be all right.                              
+[LIVE] world.                              [LIVE] Well, Steve.                              [LIVE] Well, Stu.                              [LIVE] Well, Stu, me.                              [DONE] Well, Stu, me.                              
+[LIVE] Okay.                              [LIVE] Say,                              [LIVE] Say, there,                              [LIVE] Say that thou.                              
+---- TRANSITION! Score: 78.26086956521739% | Time on line: 8.4s | t=16.2s ----
+
+[TARGET] -> Thou my best thought by day or by night
+[LIVE] Say that thou art.                              [DONE] Say that thou art.                              
+[LIVE] Th-th-th-th                              [LIVE] Thou.                              [LIVE] Far away,                              [LIVE] Thou my best.                              [LIVE] Thou my best star.                              [LIVE] Thou my best art.                              [DONE] Thou my best art.                              
+[LIVE] Bye.                              [LIVE] Bye, Dave.                              [DONE] Bye, Dave.                              
+[LIVE] you                              [LIVE] You're...                              [LIVE] Your body.                              
+---- TRANSITION! Score: 66.66666666666667% | Time on line: 8.0s | t=24.2s ----
+
+[TARGET] -> Waking or sleeping Thy presence my light
+[LIVE] Eeyore bye.                              [LIVE] Eeyore by eye.                              [DONE] Eeyore by eye.                              
+[LIVE] rate.                              [LIVE] Ray King.                              [LIVE] Raking                              [LIVE] Waking or.                              [LIVE] Waking or sleeping,                              [LIVE] Waking or sleeping, thou.                              [LIVE] Waking or sleeping, thy prince.                              [LIVE] Waking or sleeping thy presence.                              
+---- TRANSITION! Score: 61.53846153846154% | Time on line: 7.0s | t=31.2s ----
+
+[TARGET] -> Be Thou my wisdom and Thou my true word
+[LIVE] Waking or sleeping thy presence, my.                              [LIVE] Waking or sleeping thy presence, my life.                              [LIVE] Waking or sleeping thy presence, my light.                              [DONE] Waking or sleeping thy presence, my light.                              
+[LIVE] The                              [LIVE] The, the, the.                              [LIVE] Be thou.                              [LIVE] Be thou my                              [LIVE] Be thou my way,                              [LIVE] Be thou my wish,                              [LIVE] Be Thou my wisdom.                              [LIVE] Be Thou my wisdom and                              [LIVE] Be Thou my wisdom and Thy                              [LIVE] Be Thou my wisdom and Thou                              [LIVE] Be Thou my wisdom and Thou my strength.                              [LIVE] Be Thou my wisdom and Thou my truth.                              [LIVE] Be thou my wisdom and thou my truth.                              [LIVE] Be thou my wisdom and thou my true word.                              
+---- TRANSITION! Score: 100.0% | Time on line: 10.5s | t=41.7s ----
+
+[TARGET] -> I ever with Thee and Thou with me Lord
+[DONE] Be thou my wisdom and thou my true word.                              
+[LIVE] Uh,                              [LIVE] I.                              [LIVE] I am.                              
+---- TRANSITION! Score: 60.0% | Time on line: 2.5s | t=44.2s ----
+
+[TARGET] -> Thou my great Father and I Thy true son
+[LIVE] I ever.                              [LIVE] I ever will.                              [LIVE] I ever with thee.                              [LIVE] I ever with thee, and                              [LIVE] I ever with the end of                              [LIVE] I ever with thee and thou with.                              [LIVE] I ever with thee and thou with me.                              [LIVE] I ever with thee and thou with me, Lord.                              [LIVE] I ever with thee endow with me, Lord.                              [DONE] I ever with thee endow with me, Lord.                              
+[LIVE] There                              
+---- TRANSITION! Score: 60.0% | Time on line: 7.0s | t=51.2s ----
+
+[TARGET] -> Thou in me dwelling and I with Thee one
+[LIVE] The moment.                              
+---- TRANSITION! Score: 63.1578947368421% | Time on line: 0.5s | t=51.7s ----
+
+[TARGET] -> Riches I heed not nor man's empty praise
+[LIVE] Thou my                              [LIVE] Thou my great                              [DONE] Thou my great                              
+[LIVE] I need food.                              [LIVE] I need father.                              [LIVE] ♪ We'll meet Father and I ♪                              [LIVE] I need father and I, I need.                              [LIVE] ♪ I need father and I, I treat you ♪                              [LIVE] I need father and I, I choose him.                              [LIVE] I need father and I, I choose son.                              [LIVE] ♪ I need father and I ♪ ♪ I choose son ♪                              [DONE] ♪ I need father and I ♪ ♪ I choose son ♪                              
+[LIVE] Now,                              [LIVE] Thou                              [LIVE] Thou in                              [LIVE] Thou in me.                              [LIVE] Thou in me dwell.                              [LIVE] Thou in me dwelling.                              [LIVE] Thou in me dwelling,                              [LIVE] Thou in me dwelling and I.                              [LIVE] Thou in me dwelling, and I will.                              [LIVE] Thou in me dwelling, and I wait.                              [LIVE] Thou in me dwelling, and I with thee.                              [DONE] Thou in me dwelling, and I with thee.                              
+[LIVE] Yeah.                              [LIVE] Really?                              [LIVE] Reaching                              [LIVE] Reaching south                              [LIVE] Reaching side here                              [LIVE] Reaching side heat now                              [LIVE] Reaching side heed not                              [LIVE] Reaching side heed not nor                              [LIVE] Reaching side heat not normal                              [LIVE] Reaching side heed not nor man's emptiness.                              
+---- TRANSITION! Score: 70.58823529411764% | Time on line: 20.4s | t=72.1s ----
+
+[TARGET] -> Thou mine inheritance now and always
+[LIVE] Reaching side heat, not normal, man's empty.                              [LIVE] Rich inside heat, not normans empty.                              [LIVE] Rich inside heat, not normans, empty prey.                              [LIVE] Rich inside heat, not normans, empty praise.                              [DONE] Rich inside heat, not normans, empty praise.                              
+[LIVE] No.                              
+---- TRANSITION! Score: 80.0% | Time on line: 3.0s | t=75.1s ----
+
+[TARGET] -> Thou and Thou only first in my heart
+[LIVE] Thou.                              [LIVE] Thou my                              [LIVE] Thou my neediness,                              [LIVE] Thou my lean hand,                              [LIVE] Thou my Linn-her-er-er-er-er-er-er-er-er-er                              [LIVE] Thou my lean inheritance,                              [LIVE] Thou my Lienhery tents, now my Lienhery tents,                              
+---- TRANSITION! Score: 63.63636363636363% | Time on line: 4.8s | t=79.9s ----
+
+[TARGET] -> High King of heaven my treasure Thou art
+[LIVE] Thou my lean inheritance, now and                              [LIVE] Thou my lean inheritance, now and all.                              [LIVE] Thou my lean inheritance, now and always.                              [DONE] Thou my lean inheritance, now and always.                              
+[LIVE] Yeah.                              [LIVE] Thou.                              
+---- TRANSITION! Score: 80.0% | Time on line: 3.6s | t=83.5s ----
+Finished all lyrics!
+[DONE] Thou.                              
+
+Results written to /Users/calvinperumalla/personal/git/autoprez/test_answers_be_thou_my_vision.txt

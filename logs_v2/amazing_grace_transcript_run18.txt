@@ -1,0 +1,66 @@
+LINE | EXPECTED | HEARD | WER
+--------------------------------------------------------------------------------
+  1 | Amazing grace how sweet the sound
+    | Um, hey. You see? How sweet you
+    | WER: 100.0%
+
+  2 | That saved a wretch like me
+    | Eat the sound. That saved a wretch Like me.
+    | WER: 50.0%
+
+  3 | I once was lost but now am found
+    | Like meeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee I were. And trust lost. But now I'm found.
+    | WER: 75.0%
+
+  4 | Was blind but now I see
+    | But now I'm found. Was blind but not.
+    | WER: 116.7%
+
+  5 | 'Twas grace that taught my heart to fear
+    | Was blind, but now I see. Dwars graze. That taught my heart
+    | WER: 125.0%
+
+  6 | And grace my fears relieved
+    | That taught my heart. To fear And grace, My fears relieved
+    | WER: 120.0%
+
+  7 | How precious did that grace appear
+    | My fears relieved I'll precious deed That grace appears
+    | WER: 100.0%
+
+  8 | The hour I first believed
+    | (not reached)
+    | WER: N/A
+
+  9 | Through many dangers toils and snares
+    | (not reached)
+    | WER: N/A
+
+ 10 | I have already come
+    | (not reached)
+    | WER: N/A
+
+ 11 | 'Tis grace hath brought me safe thus far
+    | (not reached)
+    | WER: N/A
+
+ 12 | And grace will lead me home
+    | (not reached)
+    | WER: N/A
+
+ 13 | When we've been there ten thousand years
+    | (not reached)
+    | WER: N/A
+
+ 14 | Bright shining as the sun
+    | (not reached)
+    | WER: N/A
+
+ 15 | We've no less days to sing God's praise
+    | (not reached)
+    | WER: N/A
+
+ 16 | Than when we first begun
+    | (not reached)
+    | WER: N/A
+

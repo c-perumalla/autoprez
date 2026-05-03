@@ -1,0 +1,90 @@
+LINE | EXPECTED | HEARD | WER
+--------------------------------------------------------------------------------
+  1 | Purify my heart
+    | Then I waited. Forever Bye. Let me be here.
+    | WER: 300.0%
+
+  2 | Let me be as gold and precious silver
+    | When we'll be ever And precious earth
+    | WER: 62.5%
+
+  3 | Purify my heart
+    | And pray yes, and be all right. Mm-hmm.
+    | WER: 266.7%
+
+  4 | Let me be as gold pure gold
+    | Let me be as good Okay.
+    | WER: 42.9%
+
+  5 | Refiner's fire
+    | Pure gold. We fight for My heart's one desire. Into me Holy It's a good thing. The Anthony Fennessy. Be far, far Slow down People. Oh, that's fun. Refiners fire
+    | WER: 1450.0%
+
+  6 | My heart's one desire
+    | Refiners fire My heart's one desire.
+    | WER: 50.0%
+
+  7 | Is to be holy
+    | My heart's one desire. It's too Oh
+    | WER: 175.0%
+
+  8 | Set apart for You Lord
+    | Sitting on. for you. I choose to be. Holy Sapphire For you
+    | WER: 200.0%
+
+  9 | I choose to be holy
+    | For you My mother, ready to die.
+    | WER: 140.0%
+
+ 10 | Set apart for You my Master
+    | My mother, ready to do your will. Say
+    | WER: 133.3%
+
+ 11 | Ready to do Your will
+    | Settle burn for you Ready to do
+    | WER: 120.0%
+
+ 12 | Purify my heart
+    | Ready to do your will PewDiePie my heart
+    | WER: 200.0%
+
+ 13 | Cleanse me from within and make me holy
+    | Appeal refine my heart. Cleanly from within. They made me.
+    | WER: 100.0%
+
+ 14 | Purify my heart
+    | Pulls my heart
+    | WER: 33.3%
+
+ 15 | Cleanse me from my sin deep within
+    | Pulls my heart Reminds me from my sin
+    | WER: 85.7%
+
+ 16 | Refiner's fire
+    | I'm from a sin Deeper than Beaver in the sun. You see me there? Right. Find the fire Really? I need to go. A finer fire.
+    | WER: 1250.0%
+
+ 17 | My heart's one desire
+    | A finer fire. My heart swans, I'm here.
+    | WER: 175.0%
+
+ 18 | Is to be holy
+    | My heart swans, ah, yeah. It'll be
+    | WER: 175.0%
+
+ 19 | Set apart for You Lord
+    | It'll be Holy Set apart. Oh
+    | WER: 120.0%
+
+ 20 | I choose to be holy
+    | For you I'm too stupid. Oh.
+    | WER: 120.0%
+
+ 21 | Set apart for You my Master
+    | Saddle, paw, For you Mom: What?
+    | WER: 66.7%
+
+ 22 | Ready to do Your will
+    | My last, What do you do?
+    | WER: 100.0%
+

@@ -1,0 +1,37 @@
+Loaded 12 lyric lines from /Users/calvinperumalla/personal/git/autoprez/how_great_thou_art.txt
+Params: min_match_pct=70%, trigger_words=0, min_time=4.0s, word_tol=2, update_interval=0.5s
+
+[TARGET] -> O Lord my God when I in awesome wonder
+Test mode: processing /Users/calvinperumalla/personal/git/autoprez/how_great_thou_art.wav
+[LIVE] Oh.                              [LIVE] Oh, Lord.                              [DONE] Oh, Lord.                              
+[LIVE] Lord.                              [LIVE] Lord my                              [LIVE] Oh Lord, my God.                              [LIVE] O Lord, my God.                              [DONE] O Lord, my God.                              
+[LIVE] We                              [LIVE] When I...                              [LIVE] When I in a                              
+---- TRANSITION! seq=78%(7/9) | Time: 6.0s | t=6.0s ----
+
+[TARGET] -> Consider all the worlds Thy hands have made
+[LIVE] When I in awesome                              [LIVE] When I in awesome wonder                              [DONE] When I in awesome wonder                              
+[LIVE] Coming soon.                              [LIVE] Conceal.                              [LIVE] Conceder.                              [LIVE] Conceder all.                              [DONE] Conceder all.                              
+[LIVE] Yeah.                              [LIVE] The                              [LIVE] The world's like a.                              [LIVE] The worlds die handy.                              [LIVE] The worlds thy hands have.                              
+---- TRANSITION! seq=88%(7/8) | Time: 7.8s | t=13.8s ----
+
+[TARGET] -> I see the stars I hear the rolling thunder
+[LIVE] The worlds thy hands have made.                              [DONE] The worlds thy hands have made.                              
+[LIVE] I                              [LIVE] I see.                              [LIVE] I see the.                              [LIVE] I see the stars                              [LIVE] I see the stars.                              [DONE] I see the stars.                              
+[LIVE] I hear.                              [LIVE] I hear no.                              [LIVE] I hear the Lord.                              
+---- TRANSITION! seq=78%(7/9) | Time: 6.9s | t=20.7s ----
+
+[TARGET] -> Thy power throughout the universe displayed
+[LIVE] I hear the rolling                              [LIVE] I hear the rolling thunder                              [LIVE] I hear the rolling thunder,                              [LIVE] I hear the rolling thunder.                              [DONE] I hear the rolling thunder.                              
+[LIVE] That is,                              [LIVE] Thy power                              [LIVE] Thy power through.                              [LIVE] Thy palm through us.                              [LIVE] Thy palm through out.                              [DONE] Thy palm through out.                              
+[LIVE] the                              [LIVE] The new                              [LIVE] The unit                              [LIVE] The universe.                              [LIVE] The universe                              [LIVE] The universe displayed                              
+---- TRANSITION! seq=83%(5/6) | Time: 8.5s | t=29.2s ----
+
+[TARGET] -> Then sings my soul my Savior God to Thee
+[DONE] The universe displayed                              
+[LIVE] Yeah.                              [LIVE] Then,                              [LIVE] Then, seeing.                              [LIVE] Then sings my.                              [LIVE] Then sings my soul,                              [LIVE] Then sings my soul.                              [DONE] Then sings my soul.                              
+[LIVE] Oh my.                              [LIVE] Oh my city.                              [LIVE] Oh, my say.                              [LIVE] Oh, my Savior God.                              
+---- TRANSITION! seq=78%(7/9) | Time: 6.0s | t=35.2s ----
+
+[TARGET] -> How great Thou art how great Thou art
+[LIVE] O my Savior, God, to thee.                              [LIVE] O my Savior, God to thee.                              [LIVE] O my Saviour, God, to Thee.                              [DONE] O my Saviour, God, to Thee.                              
+[LIVE] Yeah.                              [LIVE] How good                              [LIVE] How great                              [LIVE] How great thou art!                              [LIVE] How great thou art.                              

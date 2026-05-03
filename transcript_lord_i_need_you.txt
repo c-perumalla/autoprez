@@ -1,0 +1,114 @@
+LINE | EXPECTED | HEARD | WER
+--------------------------------------------------------------------------------
+  1 | Lord I come I confess
+    | Would I come? I.
+    | WER: 40.0%
+
+  2 | Bowing here I find my rest
+    | I confess. Bowing here I find.
+    | WER: 66.7%
+
+  3 | And without You I fall apart
+    | I find my rest And without you I for.
+    | WER: 100.0%
+
+  4 | You're the one that guides my heart
+    | I fall apart, With a one That guy.
+    | WER: 114.3%
+
+  5 | Lord I need You oh I need You
+    | That guides my heart. Lord, I need you. Oh, I...
+    | WER: 75.0%
+
+  6 | Every hour I need You
+    | Oh, i need you Every hour I
+    | WER: 100.0%
+
+  7 | My one defense my righteousness
+    | Every hour I need you. My lord. defense My
+    | WER: 140.0%
+
+  8 | Oh God how I need You
+    | My righteousness, O God, how I am.
+    | WER: 83.3%
+
+  9 | Where sin runs deep Your grace is more
+    | Where sin runs deep. Your grace is
+    | WER: 12.5%
+
+ 10 | Where grace is found is where You are
+    | Your grace is for. What great is fire!
+    | WER: 75.0%
+
+ 11 | And where You are Lord I am free
+    | What grace is found He's where you are in a way
+    | WER: 112.5%
+
+ 12 | Holiness is Christ in me
+    | Is where you are and where you are Lord, I am.
+    | WER: 220.0%
+
+ 13 | Where You are Lord I am free
+    | Lord, I am free. Moviness
+    | WER: 57.1%
+
+ 14 | Holiness is Christ in me
+    | Uviness. Is christ in me?
+    | WER: 20.0%
+
+ 15 | Lord I need You oh I need You
+    | It's christ in me and i'll let you up Lord, I...
+    | WER: 125.0%
+
+ 16 | Every hour I need You
+    | Lord, I am free. Holiness Is christ in me Lord, I need you. Oh, I need.
+    | WER: 260.0%
+
+ 17 | My one defense my righteousness
+    | Oh, I need you. Every hour I need you. I want defense, fire I just
+    | WER: 280.0%
+
+ 18 | Oh God how I need You
+    | I want defense, fire righteousness Oh, God. Oh, my God.
+    | WER: 150.0%
+
+ 19 | So teach my song to rise to You
+    | Oh God, how I need you. So t my son
+    | WER: 125.0%
+
+ 20 | When temptation comes my way
+    | So tea my son to die soon. When temptation comes, my.
+    | WER: 160.0%
+
+ 21 | And when I cannot stand I'll fall on You
+    | When tempting comes my way, and I cannot snuff all you.
+    | WER: 111.1%
+
+ 22 | Jesus You're my hope and stay
+    | When tempting comes my way and I cannot snuff all you. Jesus, you're my hope and savior.
+    | WER: 200.0%
+
+ 23 | And when I cannot stand I'll fall on You
+    | Jesus, you're my hope and stay. I can't stay for long.
+    | WER: 122.2%
+
+ 24 | Jesus You're my hope and stay
+    | Jesus, you're my hope and stay. I can't stay for me. Jesus you are i hope
+    | WER: 166.7%
+
+ 25 | Lord I need You oh I need You
+    | Jesus, you're my whole best day. Lord, I pray.
+    | WER: 112.5%
+
+ 26 | Every hour I need You
+    | Lord, I need you. Here we are, I need.
+    | WER: 140.0%
+
+ 27 | My one defense my righteousness
+    | Here we are, I need you, my dear.
+    | WER: 140.0%
+
+ 28 | Oh God how I need You
+    | Here we are, I need you more than ever. Righteousness, oh Lord, how I'll be saved.
+    | WER: 216.7%
+

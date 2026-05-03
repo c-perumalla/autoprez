@@ -1,0 +1,72 @@
+Loaded 16 lyric lines from /Users/calvinperumalla/personal/git/autoprez/amazing_grace.txt
+Params: min_match_pct=70%, trigger_words=0, min_time=4.0s, word_tol=3, update_interval=0.5s
+
+[TARGET] -> Amazing grace how sweet the sound
+Test mode: processing /Users/calvinperumalla/personal/git/autoprez/amazing_grace.wav
+[LIVE] Oh                              [LIVE] Um...                              [LIVE] Um, hey.                              [DONE] Um, hey.                              
+[LIVE] You see?                              [DONE] You see?                              
+[LIVE] Uh, yeah.                              [LIVE] How sweet.                              [LIVE] How sweet                              [DONE] How sweet                              
+[LIVE] Eat the...                              [LIVE] Eat the sins.                              [LIVE] Eat the sow.                              [LIVE] Eat the sound.                              [DONE] Eat the sound.                              
+[LIVE] That                              [LIVE] That's it                              [LIVE] That's saying                              [LIVE] That saved                              [LIVE] That saved a.                              [LIVE] That saved a wretch                              [DONE] That saved a wretch                              
+[LIVE] La-                              [LIVE] Like...                              [LIVE] Like me.                              [LIVE] Like me                              [LIVE] Like meeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee                              [DONE] Like meeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee                              
+[LIVE] Ah, yeah.                              [LIVE] I want.                              [LIVE] I were.                              [DONE] I were.                              
+[LIVE] I'm sorry.                              [LIVE] And try.                              [LIVE] And trust me.                              [LIVE] And trust your heart.                              [LIVE] And trust lost.                              [DONE] And trust lost.                              
+[LIVE] But                              [LIVE] But,                              [LIVE] But now.                              [LIVE] But now I'm.                              [LIVE] But now I'm found.                              [DONE] But now I'm found.                              
+[LIVE] What?                              [LIVE] Was blind                              [LIVE] Was blind.                              [LIVE] Was blind, but.                              [LIVE] Was blind but now?                              [LIVE] Was blind but now.                              [LIVE] Was blind, but now I'm.                              [LIVE] Was blind, but now I see.                              [DONE] Was blind, but now I see.                              
+[LIVE] Yeah.                              [LIVE] Dwight.                              [LIVE] Twas great.                              [LIVE] Dwas grey.                              [LIVE] Dwars graze.                              [DONE] Dwars graze.                              
+[LIVE] That's it.                              [LIVE] That tall                              [LIVE] That taught.                              [LIVE] That taught me.                              [LIVE] That taught my                              [LIVE] That taught my heart                              [LIVE] That taught my heart.                              [DONE] That taught my heart.                              
+[LIVE] Two.                              [LIVE] Two                              [LIVE] Two feet                              [LIVE] To fear                              [DONE] To fear                              
+[LIVE] And                              [LIVE] And we'll be right back.                              [LIVE] And gray.                              [LIVE] And grace.                              [DONE] And grace.                              
+[LIVE] My, if you're                              [LIVE] My fear                              [LIVE] My fears                              [LIVE] My fears rewrote                              [LIVE] My fears really                              [LIVE] My fears relieved                              [DONE] My fears relieved                              
+[LIVE] Yeah.                              [LIVE] I'll                              [LIVE] I'll pray.                              [LIVE] I'll precious                              [LIVE] Our precious                              [LIVE] I'll precious day                              [LIVE] Our precious deed                              [DONE] Our precious deed                              
+[LIVE] That                              [LIVE] That great.                              [LIVE] That great                              [LIVE] That grace of                              [LIVE] That grace appears                              [LIVE] That grace appear                              [DONE] That grace appear                              
+[LIVE] The                              [LIVE] The...                              [LIVE] The, uh,                              [LIVE] The, ah, ah, ah, ah, ah, ah, ah, ah                              [LIVE] The, uh, uh, uh, uh, uh, uh, u                              [LIVE] The, ah, eye fairy                              [LIVE] The are I fair.                              [LIVE] The are I first?                              [DONE] The are I first?                              
+[LIVE] Yeah.                              [LIVE] Be.                              [LIVE] Be lily.                              [LIVE] Believe me.                              [LIVE] Believe.                              [DONE] Believe.                              
+[LIVE] It's a new movie.                              [LIVE] It's a new man.                              [LIVE] The new man                              [LIVE] So many days                              [LIVE] So many dangerous                              [LIVE] So many dangerous stories                              [LIVE] Through many dangers, toils,                              [DONE] Through many dangers, toils,                              
+[LIVE] And.                              [LIVE] And snipers.                              [LIVE] And snares.                              [DONE] And snares.                              
+[LIVE] I.                              [LIVE] I have.                              [DONE] I have.                              
+[LIVE] Oh,                              [LIVE] All the rest.                              [LIVE] All ray.                              [LIVE] Already.                              [LIVE] Already cur-                              [LIVE] Already cursed                              [DONE] Already cursed                              
+[LIVE] Two.                              [LIVE] Tis grace                              [LIVE] Tis grace.                              [LIVE] Tis grace, haste,                              [LIVE] This grace had brought.                              [LIVE] Tis grace hath brought.                              [DONE] Tis grace hath brought.                              
+[LIVE] Maybe.                              [LIVE] Me, see.                              [LIVE] Me see.                              [LIVE] Me say                              [LIVE] me saith thou                              [LIVE] Me saith the spider                              [LIVE] Me saith the spire                              [LIVE] Me saith thus far                              [DONE] Me saith thus far                              
+[LIVE] Yeah.                              [LIVE] And                              
+---- TRANSITION! seq=83%(5/6) | Time: 96.7s | t=96.7s ----
+
+[TARGET] -> That saved a wretch like me
+[LIVE] And great                              [LIVE] And pray                              [LIVE] And grace with                              [LIVE] And grace will lead me                              [LIVE] And grace will lead                              [LIVE] And grace will lead me                              [LIVE] And grace will lead me home                              [DONE] And grace will lead me home                              
+[LIVE] When                              [LIVE] When we                              [LIVE] When we feel                              
+---- TRANSITION! seq=83%(5/6) | Time: 9.6s | t=106.3s ----
+
+[TARGET] -> I once was lost but now am found
+[LIVE] When we've been there                              [DONE] When we've been there                              
+[LIVE] Tears.                              [LIVE] Ten,                              [LIVE] Ten, tau,                              [LIVE] Ten towels.                              [LIVE] Ten thousand.                              [LIVE] Ten thousand years.                              [DONE] Ten thousand years.                              
+[LIVE] Bright                              [LIVE] Bright shine.                              [LIVE] Bright shine,                              [LIVE] Bright, shining,                              [LIVE] Bright shining,                              [LIVE] Bright shining.                              [LIVE] Bright shining as.                              [LIVE] Bright shining as the.                              [LIVE] Bright shining as the sun.                              [DONE] Bright shining as the sun.                              
+[LIVE] We                              [LIVE] We love you.                              [LIVE] We know.                              [LIVE] We know that                              [LIVE] We've no less.                              [LIVE] We've no less than                              [LIVE] We've no less days                              [DONE] We've no less days                              
+[LIVE] Two.                              [LIVE] To say                              
+---- TRANSITION! seq=75%(6/8) | Time: 19.2s | t=125.5s ----
+
+[TARGET] -> Was blind but now I see
+[LIVE] To see.                              [LIVE] To sing.                              [LIVE] To sing God's.                              [LIVE] To seeing God's praise.                              [LIVE] To sing God's praise.                              [DONE] To sing God's praise.                              
+[LIVE] Then                              [LIVE] Then when?                              [DONE] Then when?                              
+[LIVE] We're                              [LIVE] Wee!                              [LIVE] We first                              [LIVE] We first be                              [DONE] We first be                              
+
+Results written to /Users/calvinperumalla/personal/git/autoprez/test_answers_amazing_grace.txt
+Transcript comparison saved to /Users/calvinperumalla/personal/git/autoprez/logs_v2/amazing_grace_transcript_run5.txt
+============================================================
+WORD ERROR RATE REPORT
+============================================================
+
+Line  1: "Amazing grace how sweet the sound"
+  Heard: "Um, hey. You see? How sweet Eat the sound. That saved a wretch Like meeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee I were. And trust lost. But now I'm found. Was blind, but now I see. Dwars graze. That taught my heart. To fear And grace. My fears relieved Our precious deed That grace appear The are I first? Believe. Through many dangers, toils, And snares. I have. Already cursed Tis grace hath brought. Me saith thus far And"
+  WER: 1150.0% (S=2 I=67 D=0)
+
+Line  2: "That saved a wretch like me"
+  Heard: "And grace will lead me home When we feel"
+  WER: 150.0% (S=6 I=3 D=0)
+
+Line  3: "I once was lost but now am found"
+  Heard: "When we've been there Ten thousand years. Bright shining as the sun. We've no less days To say"
+  WER: 225.0% (S=8 I=10 D=0)
+
+============================================================
+Overall WER: 480.0% (96 errors / 20 reference words)
+

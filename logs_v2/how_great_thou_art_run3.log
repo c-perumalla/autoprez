@@ -1,0 +1,131 @@
+Loaded 12 lyric lines from /Users/calvinperumalla/personal/git/autoprez/how_great_thou_art.txt
+Params: min_match_pct=50%, trigger_words=0, min_time=4.0s, word_tol=3, update_interval=0.5s
+
+[TARGET] -> O Lord my God when I in awesome wonder
+Test mode: processing /Users/calvinperumalla/personal/git/autoprez/how_great_thou_art.wav
+[LIVE] Oh.                              [LIVE] Oh, Lord.                              [DONE] Oh, Lord.                              
+[LIVE] Lord.                              [LIVE] Lord my                              [LIVE] Oh Lord, my God.                              [LIVE] O Lord, my God.                              [DONE] O Lord, my God.                              
+
+---- TRANSITION! seq=67%(6/9) | Time: 4.2s | t=4.2s ----
+
+[TARGET] -> Consider all the worlds Thy hands have made
+[LIVE] We                              [LIVE] When I...                              [LIVE] When I in a                              [LIVE] When I in awesome                              [LIVE] When I in awesome wonder                              [DONE] When I in awesome wonder                              
+[LIVE] Coming soon.                              [LIVE] Conceal.                              [LIVE] Conceder.                              [LIVE] Conceder all.                              [DONE] Conceder all.                              
+[LIVE] Yeah.                              [LIVE] The                              [LIVE] The world's like a.                              
+---- TRANSITION! seq=62%(5/8) | Time: 8.4s | t=12.6s ----
+
+[TARGET] -> I see the stars I hear the rolling thunder
+[LIVE] The worlds die handy.                              [LIVE] The worlds thy hands have.                              [LIVE] The worlds thy hands have made.                              [DONE] The worlds thy hands have made.                              
+[LIVE] I                              [LIVE] I see.                              
+---- TRANSITION! seq=56%(5/9) | Time: 4.1s | t=16.7s ----
+
+[TARGET] -> Thy power throughout the universe displayed
+[LIVE] I see the.                              [LIVE] I see the stars                              [LIVE] I see the stars.                              [DONE] I see the stars.                              
+[LIVE] I hear.                              [LIVE] I hear no.                              [LIVE] I hear the Lord.                              [LIVE] I hear the rolling                              [LIVE] I hear the rolling thunder                              [LIVE] I hear the rolling thunder,                              [LIVE] I hear the rolling thunder.                              [DONE] I hear the rolling thunder.                              
+[LIVE] That is,                              [LIVE] Thy power                              [LIVE] Thy power through.                              
+---- TRANSITION! seq=50%(3/6) | Time: 8.0s | t=24.7s ----
+
+[TARGET] -> Then sings my soul my Savior God to Thee
+[LIVE] Thy palm through us.                              [LIVE] Thy palm through out.                              [DONE] Thy palm through out.                              
+[LIVE] the                              [LIVE] The new                              [LIVE] The unit                              [LIVE] The universe.                              [LIVE] The universe                              [LIVE] The universe displayed                              [DONE] The universe displayed                              
+[LIVE] Yeah.                              [LIVE] Then,                              [LIVE] Then, seeing.                              [LIVE] Then sings my.                              [LIVE] Then sings my soul,                              [LIVE] Then sings my soul.                              [DONE] Then sings my soul.                              
+[LIVE] Oh my.                              
+---- TRANSITION! seq=67%(6/9) | Time: 9.0s | t=33.7s ----
+
+[TARGET] -> How great Thou art how great Thou art
+[LIVE] Oh my city.                              [LIVE] Oh, my say.                              [LIVE] Oh, my Savior God.                              [LIVE] O my Savior, God, to thee.                              [LIVE] O my Savior, God to thee.                              [LIVE] O my Saviour, God, to Thee.                              [DONE] O my Saviour, God, to Thee.                              
+[LIVE] Yeah.                              [LIVE] How good                              
+---- TRANSITION! seq=62%(5/8) | Time: 5.0s | t=38.7s ----
+
+[TARGET] -> Then sings my soul my Savior God to Thee
+[LIVE] How great                              [LIVE] How great thou art!                              [LIVE] How great thou art.                              [LIVE] How great thou art!                              [DONE] How great thou art!                              
+[LIVE] How?                              [LIVE] How great                              [LIVE] How great thou art.                              [LIVE] How great thou art!                              [LIVE] How great thou art, then, sinking.                              
+---- TRANSITION! seq=56%(5/9) | Time: 6.5s | t=45.2s ----
+
+[TARGET] -> How great Thou art how great Thou art
+[LIVE] How great thou art, then sings my.                              [LIVE] How great thou art, then sings my soul,                              [LIVE] How great thou art, then sings my soul.                              [DONE] How great thou art, then sings my soul.                              
+[LIVE] Yeah.                              [LIVE] Bye.                              [LIVE] Oh, I say.                              [LIVE] Allah, save your life.                              [LIVE] Allah, save your God.                              
+---- TRANSITION! seq=88%(7/8) | Time: 4.0s | t=49.2s ----
+
+[TARGET] -> When through the woods and forest glades I wander
+[LIVE] Almighty Savior God, to thee.                              [DONE] Almighty Savior God, to thee.                              
+[LIVE] Yeah.                              [LIVE] I do.                              [LIVE] I'll break the                              [LIVE] A great hour.                              [LIVE] A great tower                              [LIVE] How great thou art.                              [LIVE] How great thou art!                              [DONE] How great thou art!                              
+[LIVE] Oh, good.                              [LIVE] How great!                              
+---- TRANSITION! seq=56%(5/9) | Time: 7.0s | t=56.2s ----
+
+[TARGET] -> And hear the birds sing sweetly in the trees
+[LIVE] How great.                              [LIVE] How great thou art.                              [LIVE] I'll grade thou all.                              [LIVE] How great thou art.                              [DONE] How great thou art.                              
+[LIVE] Well,                              [LIVE] When to be.                              
+---- TRANSITION! seq=56%(5/9) | Time: 4.5s | t=60.7s ----
+
+[TARGET] -> When I look down from lofty mountain grandeur
+[LIVE] Went through the.                              [LIVE] Went through the world.                              [DONE] Went through the world.                              
+[LIVE] And...                              [DONE] And...                              
+[LIVE] And...                              [LIVE] And for.                              [LIVE] And forest glee                              [LIVE] And forest glades, I.                              [LIVE] And forest glades I wan.                              [LIVE] And forest glades, I wander.                              [LIVE] And forest glades, I wander, and here                              [LIVE] And forest glades, I wander, and hear the.                              [LIVE] And forest glades, I wander, and hear the birds.                              [LIVE] And forest glades, I wander, and hear the birds sing.                              [LIVE] And forest glades, I wander, and hear the birds sing sweet.                              [LIVE] And forest glades, I wander, and hear the birds sing sweetly.                              [LIVE] And forest glades, I wander, and hear the birds sing sweetly in.                              [LIVE] And forest glades, I wander, and hear the birds sing sweetly in the tree.                              
+---- TRANSITION! seq=50%(4/8) | Time: 12.6s | t=73.3s ----
+
+[TARGET] -> And hear the brook and feel the gentle breeze
+[DONE] And forest glades, I wander, and hear the birds sing sweetly in the tree.                              
+[LIVE] Peace.                              [LIVE] When?                              [LIVE] When I was.                              [LIVE] When I looked down                              [LIVE] When I look down                              [DONE] When I look down                              
+[LIVE] So,                              
+---- TRANSITION! seq=56%(5/9) | Time: 5.4s | t=78.7s ----
+Finished all lyrics!
+[DONE] So,                              
+
+Results written to /Users/calvinperumalla/personal/git/autoprez/test_answers_how_great_thou_art.txt
+Transcript comparison saved to /Users/calvinperumalla/personal/git/autoprez/logs_v2/how_great_thou_art_transcript_run3.txt
+============================================================
+WORD ERROR RATE REPORT
+============================================================
+
+Line  1: "O Lord my God when I in awesome wonder"
+  Heard: "Oh, Lord. O Lord, my God."
+  WER: 77.8% (S=0 I=2 D=5)
+
+Line  2: "Consider all the worlds Thy hands have made"
+  Heard: "When I in awesome wonder Conceder all. The world's like a."
+  WER: 137.5% (S=8 I=3 D=0)
+
+Line  3: "I see the stars I hear the rolling thunder"
+  Heard: "The worlds thy hands have made. I see."
+  WER: 100.0% (S=8 I=0 D=1)
+
+Line  4: "Thy power throughout the universe displayed"
+  Heard: "I see the stars. I hear the rolling thunder. Thy power through."
+  WER: 183.3% (S=5 I=6 D=0)
+
+Line  5: "Then sings my soul my Savior God to Thee"
+  Heard: "Thy palm through out. The universe displayed Then sings my soul. Oh my."
+  WER: 133.3% (S=2 I=7 D=3)
+
+Line  6: "How great Thou art how great Thou art"
+  Heard: "O my Saviour, God, to Thee. How good"
+  WER: 100.0% (S=8 I=0 D=0)
+
+Line  7: "Then sings my soul my Savior God to Thee"
+  Heard: "How great thou art! How great thou art, then, sinking."
+  WER: 111.1% (S=9 I=1 D=0)
+
+Line  8: "How great Thou art how great Thou art"
+  Heard: "How great thou art, then sings my soul. Allah, save your God."
+  WER: 100.0% (S=4 I=4 D=0)
+
+Line  9: "When through the woods and forest glades I wander"
+  Heard: "Almighty Savior God, to thee. How great thou art! How great!"
+  WER: 122.2% (S=9 I=2 D=0)
+
+Line 10: "And hear the birds sing sweetly in the trees"
+  Heard: "How great thou art. When to be."
+  WER: 100.0% (S=7 I=0 D=2)
+
+Line 11: "When I look down from lofty mountain grandeur"
+  Heard: "Went through the world. And... And forest glades, I wander, and hear the birds sing sweetly in the tree."
+  WER: 225.0% (S=7 I=11 D=0)
+
+Line 12: "And hear the brook and feel the gentle breeze"
+  Heard: "And forest glades, I wander, and hear the birds sing sweetly in the tree. When I look down So,"
+  WER: 166.7% (S=5 I=10 D=0)
+
+============================================================
+Overall WER: 127.7% (129 errors / 101 reference words)
+

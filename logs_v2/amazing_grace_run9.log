@@ -1,0 +1,174 @@
+Loaded 16 lyric lines from /Users/calvinperumalla/personal/git/autoprez/amazing_grace.txt
+Params: min_match_pct=60%, trigger_words=0, min_time=4.0s, word_tol=3, update_interval=0.5s
+
+[TARGET] -> Amazing grace how sweet the sound
+Test mode: processing /Users/calvinperumalla/personal/git/autoprez/amazing_grace.wav
+[LIVE] Oh                              [LIVE] Um...                              [LIVE] Um, hey.                              [DONE] Um, hey.                              
+[LIVE] You see?                              [DONE] You see?                              
+[LIVE] Uh, yeah.                              [LIVE] How sweet.                              [LIVE] How sweet                              [DONE] How sweet                              
+[LIVE] Eat the...                              [LIVE] Eat the sins.                              
+---- TRANSITION! seq=67%(4/6) | Time: 9.6s | t=9.6s ----
+
+[TARGET] -> That saved a wretch like me
+[LIVE] Eat the sow.                              [LIVE] Eat the sound.                              [DONE] Eat the sound.                              
+[LIVE] That                              [LIVE] That's it                              [LIVE] That's saying                              [LIVE] That saved                              [LIVE] That saved a.                              
+---- TRANSITION! seq=67%(4/6) | Time: 4.2s | t=13.8s ----
+
+[TARGET] -> I once was lost but now am found
+[LIVE] That saved a wretch                              [DONE] That saved a wretch                              
+[LIVE] La-                              [LIVE] Like...                              [LIVE] Like me.                              [LIVE] Like me                              [LIVE] Like meeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee                              [DONE] Like meeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee                              
+[LIVE] Ah, yeah.                              [LIVE] I want.                              [LIVE] I were.                              [DONE] I were.                              
+[LIVE] I'm sorry.                              [LIVE] And try.                              
+---- TRANSITION! seq=62%(5/8) | Time: 8.4s | t=22.2s ----
+
+[TARGET] -> Was blind but now I see
+[LIVE] And trust me.                              [LIVE] And trust your heart.                              [LIVE] And trust lost.                              [DONE] And trust lost.                              
+[LIVE] But                              [LIVE] But,                              [LIVE] But now.                              [LIVE] But now I'm.                              
+---- TRANSITION! seq=83%(5/6) | Time: 4.5s | t=26.7s ----
+
+[TARGET] -> 'Twas grace that taught my heart to fear
+[LIVE] But now I'm found.                              [DONE] But now I'm found.                              
+[LIVE] What?                              [LIVE] Was blind                              [LIVE] Was blind.                              [LIVE] Was blind, but.                              [LIVE] Was blind but now?                              [LIVE] Was blind but now.                              [LIVE] Was blind, but now I'm.                              [LIVE] Was blind, but now I see.                              
+---- TRANSITION! seq=62%(5/8) | Time: 6.5s | t=33.2s ----
+
+[TARGET] -> And grace my fears relieved
+[DONE] Was blind, but now I see.                              
+[LIVE] Yeah.                              [LIVE] Dwight.                              [LIVE] Twas great.                              [LIVE] Dwas grey.                              [LIVE] Dwars graze.                              [DONE] Dwars graze.                              
+[LIVE] That's it.                              
+---- TRANSITION! seq=60%(3/5) | Time: 6.0s | t=39.2s ----
+
+[TARGET] -> How precious did that grace appear
+[LIVE] That tall                              [LIVE] That taught.                              [LIVE] That taught me.                              [LIVE] That taught my                              [LIVE] That taught my heart                              [LIVE] That taught my heart.                              [DONE] That taught my heart.                              
+[LIVE] Two.                              [LIVE] Two                              [LIVE] Two feet                              [LIVE] To fear                              
+---- TRANSITION! seq=67%(4/6) | Time: 5.5s | t=44.7s ----
+
+[TARGET] -> The hour I first believed
+[DONE] To fear                              
+[LIVE] And                              [LIVE] And we'll be right back.                              [LIVE] And gray.                              [LIVE] And grace.                              [DONE] And grace.                              
+[LIVE] My, if you're                              [LIVE] My fear                              
+---- TRANSITION! seq=60%(3/5) | Time: 4.0s | t=48.7s ----
+
+[TARGET] -> Through many dangers toils and snares
+[LIVE] My fears                              [LIVE] My fears rewrote                              [LIVE] My fears really                              [LIVE] My fears relieved                              [DONE] My fears relieved                              
+[LIVE] Yeah.                              [LIVE] I'll                              [LIVE] I'll pray.                              [LIVE] I'll precious                              [LIVE] Our precious                              [LIVE] I'll precious day                              [LIVE] Our precious deed                              [DONE] Our precious deed                              
+[LIVE] That                              [LIVE] That great.                              [LIVE] That great                              [LIVE] That grace of                              [LIVE] That grace appears                              [LIVE] That grace appear                              [DONE] That grace appear                              
+[LIVE] The                              [LIVE] The...                              [LIVE] The, uh,                              [LIVE] The, ah, ah, ah, ah, ah, ah, ah, ah                              [LIVE] The, uh, uh, uh, uh, uh, uh, u                              [LIVE] The, ah, eye fairy                              [LIVE] The are I fair.                              [LIVE] The are I first?                              [DONE] The are I first?                              
+[LIVE] Yeah.                              [LIVE] Be.                              [LIVE] Be lily.                              [LIVE] Believe me.                              [LIVE] Believe.                              [DONE] Believe.                              
+[LIVE] It's a new movie.                              [LIVE] It's a new man.                              [LIVE] The new man                              [LIVE] So many days                              [LIVE] So many dangerous                              [LIVE] So many dangerous stories                              [LIVE] Through many dangers, toils,                              
+---- TRANSITION! seq=67%(4/6) | Time: 28.2s | t=76.9s ----
+
+[TARGET] -> I have already come
+[DONE] Through many dangers, toils,                              
+[LIVE] And.                              [LIVE] And snipers.                              [LIVE] And snares.                              [DONE] And snares.                              
+[LIVE] I.                              [LIVE] I have.                              [DONE] I have.                              
+[LIVE] Oh,                              
+---- TRANSITION! seq=75%(3/4) | Time: 5.4s | t=82.3s ----
+
+[TARGET] -> 'Tis grace hath brought me safe thus far
+[LIVE] All the rest.                              [LIVE] All ray.                              [LIVE] Already.                              [LIVE] Already cur-                              [LIVE] Already cursed                              [DONE] Already cursed                              
+[LIVE] Two.                              [LIVE] Tis grace                              [LIVE] Tis grace.                              [LIVE] Tis grace, haste,                              [LIVE] This grace had brought.                              [LIVE] Tis grace hath brought.                              [DONE] Tis grace hath brought.                              
+[LIVE] Maybe.                              
+---- TRANSITION! seq=62%(5/8) | Time: 9.6s | t=91.9s ----
+
+[TARGET] -> And grace will lead me home
+[LIVE] Me, see.                              [LIVE] Me see.                              [LIVE] Me say                              [LIVE] me saith thou                              [LIVE] Me saith the spider                              [LIVE] Me saith the spire                              [LIVE] Me saith thus far                              [DONE] Me saith thus far                              
+[LIVE] Yeah.                              [LIVE] And                              [LIVE] And great                              [LIVE] And pray                              [LIVE] And grace with                              [LIVE] And grace will lead me                              
+---- TRANSITION! seq=83%(5/6) | Time: 7.2s | t=99.1s ----
+
+[TARGET] -> When we've been there ten thousand years
+[LIVE] And grace will lead                              [LIVE] And grace will lead me                              [LIVE] And grace will lead me home                              [DONE] And grace will lead me home                              
+[LIVE] When                              [LIVE] When we                              [LIVE] When we feel                              [LIVE] When we've been there                              [DONE] When we've been there                              
+[LIVE] Tears.                              
+---- TRANSITION! seq=71%(5/7) | Time: 9.6s | t=108.7s ----
+
+[TARGET] -> Bright shining as the sun
+[LIVE] Ten,                              [LIVE] Ten, tau,                              [LIVE] Ten towels.                              [LIVE] Ten thousand.                              [LIVE] Ten thousand years.                              [DONE] Ten thousand years.                              
+[LIVE] Bright                              [LIVE] Bright shine.                              [LIVE] Bright shine,                              [LIVE] Bright, shining,                              [LIVE] Bright shining,                              [LIVE] Bright shining.                              [LIVE] Bright shining as.                              
+---- TRANSITION! seq=60%(3/5) | Time: 8.4s | t=117.1s ----
+
+[TARGET] -> We've no less days to sing God's praise
+[LIVE] Bright shining as the.                              [LIVE] Bright shining as the sun.                              [DONE] Bright shining as the sun.                              
+[LIVE] We                              [LIVE] We love you.                              [LIVE] We know.                              [LIVE] We know that                              [LIVE] We've no less.                              [LIVE] We've no less than                              [LIVE] We've no less days                              [DONE] We've no less days                              
+[LIVE] Two.                              
+---- TRANSITION! seq=62%(5/8) | Time: 7.8s | t=124.9s ----
+
+[TARGET] -> Than when we first begun
+[LIVE] To say                              [LIVE] To see.                              [LIVE] To sing.                              [LIVE] To sing God's.                              [LIVE] To seeing God's praise.                              [LIVE] To sing God's praise.                              [DONE] To sing God's praise.                              
+[LIVE] Then                              [LIVE] Then when?                              
+---- TRANSITION! seq=60%(3/5) | Time: 5.4s | t=130.3s ----
+Finished all lyrics!
+[DONE] Then when?                              
+
+Results written to /Users/calvinperumalla/personal/git/autoprez/test_answers_amazing_grace.txt
+Transcript comparison saved to /Users/calvinperumalla/personal/git/autoprez/logs_v2/amazing_grace_transcript_run9.txt
+============================================================
+WORD ERROR RATE REPORT
+============================================================
+
+Line  1: "Amazing grace how sweet the sound"
+  Heard: "Um, hey. You see? How sweet Eat the sins."
+  WER: 100.0% (S=3 I=3 D=0)
+
+Line  2: "That saved a wretch like me"
+  Heard: "Eat the sound. That saved a."
+  WER: 100.0% (S=6 I=0 D=0)
+
+Line  3: "I once was lost but now am found"
+  Heard: "That saved a wretch Like meeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee I were. And try."
+  WER: 125.0% (S=8 I=2 D=0)
+
+Line  4: "Was blind but now I see"
+  Heard: "And trust lost. But now I'm."
+  WER: 83.3% (S=3 I=1 D=1)
+
+Line  5: "'Twas grace that taught my heart to fear"
+  Heard: "But now I'm found. Was blind, but now I see."
+  WER: 125.0% (S=8 I=2 D=0)
+
+Line  6: "And grace my fears relieved"
+  Heard: "Was blind, but now I see. Dwars graze. That's it."
+  WER: 200.0% (S=5 I=5 D=0)
+
+Line  7: "How precious did that grace appear"
+  Heard: "That taught my heart. To fear"
+  WER: 100.0% (S=6 I=0 D=0)
+
+Line  8: "The hour I first believed"
+  Heard: "To fear And grace. My fear"
+  WER: 120.0% (S=5 I=1 D=0)
+
+Line  9: "Through many dangers toils and snares"
+  Heard: "My fears relieved Our precious deed That grace appear The are I first? Believe. Through many dangers, toils,"
+  WER: 266.7% (S=0 I=14 D=2)
+
+Line 10: "I have already come"
+  Heard: "Through many dangers, toils, And snares. I have. Oh,"
+  WER: 200.0% (S=1 I=6 D=1)
+
+Line 11: "'Tis grace hath brought me safe thus far"
+  Heard: "Already cursed Tis grace hath brought. Maybe."
+  WER: 87.5% (S=2 I=2 D=3)
+
+Line 12: "And grace will lead me home"
+  Heard: "Me saith thus far And grace will lead me"
+  WER: 83.3% (S=0 I=4 D=1)
+
+Line 13: "When we've been there ten thousand years"
+  Heard: "And grace will lead me home When we've been there Tears."
+  WER: 128.6% (S=1 I=6 D=2)
+
+Line 14: "Bright shining as the sun"
+  Heard: "Ten thousand years. Bright shining as."
+  WER: 100.0% (S=0 I=3 D=2)
+
+Line 15: "We've no less days to sing God's praise"
+  Heard: "Bright shining as the sun. We've no less days Two."
+  WER: 112.5% (S=1 I=5 D=3)
+
+Line 16: "Than when we first begun"
+  Heard: "To sing God's praise. Then when?"
+  WER: 120.0% (S=5 I=1 D=0)
+
+============================================================
+Overall WER: 125.3% (124 errors / 99 reference words)
+

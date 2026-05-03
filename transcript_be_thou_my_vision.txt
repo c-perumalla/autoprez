@@ -1,0 +1,50 @@
+LINE | EXPECTED | HEARD | WER
+--------------------------------------------------------------------------------
+  1 | Be Thou my vision O Lord of my heart
+    | Be Thou mighty. Imagine. Check window check window Be thou my vision. O Lord of my life.
+    | WER: 100.0%
+
+  2 | Naught be all else to me save that Thou art
+    | O Lord of my heart, Party all else to me. See that, though.
+    | WER: 90.0%
+
+  3 | Thou my best thought by day or by night
+    | See that the. Be my best thought. Bye-bye day or night.
+    | WER: 66.7%
+
+  4 | Waking or sleeping Thy presence my light
+    | By day or by night. Sleepy,
+    | WER: 100.0%
+
+  5 | Be Thou my wisdom and Thou my true word
+    | Sleepy or sleepy, I'll presence my light. Be Thou my wisdom and Thou my true word.
+    | WER: 77.8%
+
+  6 | I ever with Thee and Thou with me Lord
+    | Be Thou my wisdom and Thou my true word. I ever.
+    | WER: 100.0%
+
+  7 | Thou my great Father and I Thy true son
+    | I err we. With thee and thou in me, Lord.
+    | WER: 100.0%
+
+  8 | Thou in me dwelling and I with Thee one
+    | With thee and thou in me, Lord. Ah, my great father,
+    | WER: 100.0%
+
+  9 | Riches I heed not nor man's empty praise
+    | Ah, my great father, And I die true son. ♪ Darling, it's worry ♪ More man than tea-preen. Which is a he-but no man's empty.
+    | WER: 262.5%
+
+ 10 | Thou mine inheritance now and always
+    | Which is a heed but no man's empty prey. Come on inherit it Thou mine inheritance, o waste! No.
+    | WER: 266.7%
+
+ 11 | Thou and Thou only first in my heart
+    | The world Be first in my.
+    | WER: 62.5%
+
+ 12 | High King of heaven my treasure Thou art
+    | Be first in my heart. A king of heaven, My treasures are all.
+    | WER: 112.5%
+

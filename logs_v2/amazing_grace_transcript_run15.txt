@@ -1,0 +1,66 @@
+LINE | EXPECTED | HEARD | WER
+--------------------------------------------------------------------------------
+  1 | Amazing grace how sweet the sound
+    | Um, hey. You see? How?
+    | WER: 100.0%
+
+  2 | That saved a wretch like me
+    | How sweet Eat the sound.
+    | WER: 100.0%
+
+  3 | I once was lost but now am found
+    | That saved a wretch Like me.
+    | WER: 100.0%
+
+  4 | Was blind but now I see
+    | Like meeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee I were.
+    | WER: 83.3%
+
+  5 | 'Twas grace that taught my heart to fear
+    | I were. And trust lost. But now,
+    | WER: 100.0%
+
+  6 | And grace my fears relieved
+    | But now I'm found. Was blind,
+    | WER: 120.0%
+
+  7 | How precious did that grace appear
+    | Was blind, but now I see. Dwas great.
+    | WER: 133.3%
+
+  8 | The hour I first believed
+    | Dwars graze. That taught my heart. Two
+    | WER: 140.0%
+
+  9 | Through many dangers toils and snares
+    | To fear And grace, My fear
+    | WER: 100.0%
+
+ 10 | I have already come
+    | My fears relieved I'll precious deed That great
+    | WER: 200.0%
+
+ 11 | 'Tis grace hath brought me safe thus far
+    | That grace appear The, ah, ah, ah, ah, ah, ah, ah, ah, ah
+    | WER: 150.0%
+
+ 12 | And grace will lead me home
+    | The are I first? Believe me.
+    | WER: 100.0%
+
+ 13 | When we've been there ten thousand years
+    | Believe. The new many days
+    | WER: 100.0%
+
+ 14 | Bright shining as the sun
+    | So many dangerous toils And snares. I.
+    | WER: 140.0%
+
+ 15 | We've no less days to sing God's praise
+    | I have. All ray.
+    | WER: 100.0%
+
+ 16 | Than when we first begun
+    | Already cursed Tis grace hath brought. Me see
+    | WER: 160.0%
+

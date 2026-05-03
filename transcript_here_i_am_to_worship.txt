@@ -1,0 +1,74 @@
+LINE | EXPECTED | HEARD | WER
+--------------------------------------------------------------------------------
+  1 | Light of the world You stepped down into darkness
+    | You step down.
+    | WER: 77.8%
+
+  2 | Opened my eyes let me see
+    | You step down me to darkness. Oh, oh. Open my eyes. I did.
+    | WER: 200.0%
+
+  3 | Beauty that made this heart adore You
+    | Let me... I see you. Beauty that made this heart
+    | WER: 100.0%
+
+  4 | Hope of a life spent with You
+    | Beauty that made this heart adorn. Who'd ever lie? Send with you
+    | WER: 142.9%
+
+  5 | Here I am to worship here I am to bow down
+    | Send for you. So here i am to
+    | WER: 63.6%
+
+  6 | Here I am to say that You're my God
+    | So here I am to worship. Here I am to love.
+    | WER: 77.8%
+
+  7 | You're altogether lovely altogether worthy
+    | So here I am to worship, here I am to love, here I am to say that you're right. All together the all together
+    | WER: 460.0%
+
+  8 | Altogether wonderful to me
+    | All together the all together wonderful two
+    | WER: 175.0%
+
+  9 | King of all days oh so highly exalted
+    | All together the all together wonderful to me King of all day, Also, I have a
+    | WER: 162.5%
+
+ 10 | Glorious in heaven above
+    | 1988, also High Leagues on Tip. Oh yes in heaven above
+    | WER: 200.0%
+
+ 11 | Humbly You came to the earth You created
+    | Oh yes in heaven above Um, we came to see you.
+    | WER: 125.0%
+
+ 12 | All for love's sake became poor
+    | ♪ Um, we came to the earth to create it ♪ ♪ All of it became porn ♪
+    | WER: 216.7%
+
+ 13 | Here I am to worship here I am to bow down
+    | And we came to the earth to create all our faith became poor Here I am to worship
+    | WER: 127.3%
+
+ 14 | Here I am to say that You're my God
+    | Here I am to worship. Here I am to bow down.
+    | WER: 77.8%
+
+ 15 | You're altogether lovely altogether worthy
+    | Here I am to worship. Here I am to bow down. Here I am to pray for my God. You're too bad. All together worthy
+    | WER: 460.0%
+
+ 16 | Altogether wonderful to me
+    | All together worthy All together wonderful
+    | WER: 150.0%
+
+ 17 | I'll never know how much it cost
+    | All together wonderful to me I ever know I'm not shit.
+    | WER: 157.1%
+
+ 18 | To see my sin upon that cross
+    | I'm not shit cause to see my head Don't have to. Cross
+    | WER: 114.3%
+

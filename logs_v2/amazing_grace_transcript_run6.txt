@@ -1,0 +1,66 @@
+LINE | EXPECTED | HEARD | WER
+--------------------------------------------------------------------------------
+  1 | Amazing grace how sweet the sound
+    | Um, hey. You see? How sweet Eat the sound. That saved a wretch Like meeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee I were. And trust lost. But now I'm found. Was blind, but now I see. Dwars graze. That taught my heart. To fear And grace. My fears relieved Our precious deed That grace appear The are I first? Believe. Through many dangers, toils, And snares. I have. Already cursed Tis grace hath brought. Me saith thus far And
+    | WER: 1150.0%
+
+  2 | That saved a wretch like me
+    | And grace will lead me home When we feel
+    | WER: 150.0%
+
+  3 | I once was lost but now am found
+    | When we've been there Ten thousand years. Bright shining as the sun. We've no less days To sing God's praise. Then when? We first be
+    | WER: 312.5%
+
+  4 | Was blind but now I see
+    | (not reached)
+    | WER: N/A
+
+  5 | 'Twas grace that taught my heart to fear
+    | (not reached)
+    | WER: N/A
+
+  6 | And grace my fears relieved
+    | (not reached)
+    | WER: N/A
+
+  7 | How precious did that grace appear
+    | (not reached)
+    | WER: N/A
+
+  8 | The hour I first believed
+    | (not reached)
+    | WER: N/A
+
+  9 | Through many dangers toils and snares
+    | (not reached)
+    | WER: N/A
+
+ 10 | I have already come
+    | (not reached)
+    | WER: N/A
+
+ 11 | 'Tis grace hath brought me safe thus far
+    | (not reached)
+    | WER: N/A
+
+ 12 | And grace will lead me home
+    | (not reached)
+    | WER: N/A
+
+ 13 | When we've been there ten thousand years
+    | (not reached)
+    | WER: N/A
+
+ 14 | Bright shining as the sun
+    | (not reached)
+    | WER: N/A
+
+ 15 | We've no less days to sing God's praise
+    | (not reached)
+    | WER: N/A
+
+ 16 | Than when we first begun
+    | (not reached)
+    | WER: N/A
+

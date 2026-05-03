@@ -1,0 +1,124 @@
+Loaded 12 lyric lines from /Users/calvinperumalla/personal/git/autoprez/be_thou_my_vision.txt
+Params: min_match_pct=60%, trigger_words=3, min_time=4.0s, word_tol=3, update_interval=0.3s
+
+[TARGET] -> Be Thou my vision O Lord of my heart
+Test mode: processing /Users/calvinperumalla/personal/git/autoprez/be_thou_my_vision.wav
+[LIVE] Be.                              [LIVE] Be the...                              [LIVE] Be thou my                              [LIVE] Be Thou my angel.                              [LIVE] Be Thou my vision                              
+---- TRANSITION! seq=67%(2/3) | Time: 4.6s | t=4.6s ----
+
+[TARGET] -> Naught be all else to me save that Thou art
+[LIVE] Be Thou my vision.                              [DONE] Be Thou my vision.                              
+[LIVE] Oh Lord.                              [LIVE] O Lord.                              [DONE] O Lord.                              
+[LIVE] of my                              [LIVE] Of my heart.                              
+---- TRANSITION! seq=100%(3/3) | Time: 4.0s | t=8.6s ----
+
+[TARGET] -> Thou my best thought by day or by night
+[DONE] Of my heart.                              
+[LIVE] Yeah.                              [LIVE] Nah.                              [DONE] Nah.                              
+[LIVE] I'd be                              [LIVE] I'll be your                              [LIVE] I'll be all right.                              
+---- TRANSITION! seq=100%(3/3) | Time: 4.0s | t=12.6s ----
+
+[TARGET] -> Waking or sleeping Thy presence my light
+[DONE] I'll be all right.                              
+[LIVE] world.                              [LIVE] Well, Stu.                              [LIVE] Well, still me.                              [DONE] Well, still me.                              
+[LIVE] Say,                              [LIVE] Say that.                              [LIVE] Say that thou.                              [LIVE] Say that thou art.                              
+---- TRANSITION! seq=67%(2/3) | Time: 4.5s | t=17.1s ----
+
+[TARGET] -> Be Thou my wisdom and Thou my true word
+[LIVE] Seetheth thou art.                              [DONE] Seetheth thou art.                              
+[LIVE] Yeah                              [LIVE] Thou.                              [LIVE] Thou my best.                              [LIVE] Thou my best star.                              
+---- TRANSITION! seq=67%(2/3) | Time: 4.2s | t=21.3s ----
+
+[TARGET] -> I ever with Thee and Thou with me Lord
+[LIVE] Thou my best art.                              [DONE] Thou my best art.                              
+[LIVE] But                              [LIVE] Bye, Jake.                              [LIVE] Bye, Dave.                              [DONE] Bye, Dave.                              
+[LIVE] You're...                              [LIVE] We are by.                              [LIVE] Eeyore by yar.                              [LIVE] Eeyore by eye.                              
+---- TRANSITION! seq=67%(2/3) | Time: 4.2s | t=25.5s ----
+
+[TARGET] -> Thou my great Father and I Thy true son
+[DONE] Eeyore by eye.                              
+[LIVE] rate.                              [LIVE] Reagan.                              [LIVE] Waking, oh!                              [LIVE] Reaking or sleeping,                              [LIVE] Waking or sleeping,                              [LIVE] Waking or sleeping, thy.                              
+---- TRANSITION! seq=100%(3/3) | Time: 4.8s | t=30.3s ----
+
+[TARGET] -> Thou in me dwelling and I with Thee one
+[LIVE] Waking or sleeping, thy prayer.                              [LIVE] Waking or sleeping thy presence.                              [LIVE] Waking or sleeping thy presence,                              [LIVE] Waking or sleeping thy presence, my.                              [LIVE] Waking or sleeping, thy presence, my light.                              [LIVE] Waking or sleeping, thy presence, my life.                              [LIVE] Waking or sleeping thy presence, my light.                              
+---- TRANSITION! seq=67%(2/3) | Time: 4.2s | t=34.5s ----
+
+[TARGET] -> Riches I heed not nor man's empty praise
+[DONE] Waking or sleeping thy presence, my light.                              
+[LIVE] The                              [LIVE] The, the, the.                              [LIVE] Be thou.                              [LIVE] Be thou my                              [LIVE] Be thou my way,                              [LIVE] Be Thou my wisdom.                              [LIVE] Be Thou my wisdom and                              [LIVE] Be Thou my wisdom and Thou                              [LIVE] Be Thou my wisdom and Thou my                              
+---- TRANSITION! seq=67%(2/3) | Time: 5.4s | t=39.9s ----
+
+[TARGET] -> Thou mine inheritance now and always
+[LIVE] Be Thou my wisdom and Thou my truth.                              [LIVE] Be thou my wisdom and thou my truth.                              [LIVE] Be thou my wisdom and thou my true word.                              [DONE] Be thou my wisdom and thou my true word.                              
+[LIVE] Yeah.                              [LIVE] I.                              [LIVE] I am.                              
+---- TRANSITION! seq=67%(2/3) | Time: 4.2s | t=44.1s ----
+
+[TARGET] -> Thou and Thou only first in my heart
+[LIVE] I ever.                              [LIVE] I ever will.                              [LIVE] I ever with thee.                              [LIVE] I ever with thee and thou.                              [LIVE] I ever with the end of                              [LIVE] I ever with thee and thou with me                              
+---- TRANSITION! seq=67%(2/3) | Time: 4.2s | t=48.3s ----
+
+[TARGET] -> High King of heaven my treasure Thou art
+[LIVE] I ever with thee and thou with me.                              [LIVE] I ever with thee and thou with me, Lord.                              [LIVE] I ever with thee, and thou with me, Lord.                              [DONE] I ever with thee, and thou with me, Lord.                              
+[LIVE] The                              [LIVE] Thou my                              [LIVE] Thou my greatness                              
+---- TRANSITION! seq=67%(2/3) | Time: 4.2s | t=52.5s ----
+Finished all lyrics!
+[DONE] Thou my greatness                              
+
+Results written to /Users/calvinperumalla/personal/git/autoprez/test_answers_be_thou_my_vision.txt
+Transcript comparison saved to /Users/calvinperumalla/personal/git/autoprez/logs_v2/be_thou_my_vision_transcript_run22.txt
+============================================================
+WORD ERROR RATE REPORT
+============================================================
+
+Line  1: "Be Thou my vision O Lord of my heart"
+  Heard: "Be Thou my vision"
+  WER: 55.6% (S=0 I=0 D=5)
+
+Line  2: "Naught be all else to me save that Thou art"
+  Heard: "Be Thou my vision. O Lord. Of my heart."
+  WER: 90.0% (S=8 I=0 D=1)
+
+Line  3: "Thou my best thought by day or by night"
+  Heard: "Of my heart. Nah. I'll be all right."
+  WER: 88.9% (S=7 I=0 D=1)
+
+Line  4: "Waking or sleeping Thy presence my light"
+  Heard: "I'll be all right. Well, still me. Say that thou art."
+  WER: 157.1% (S=7 I=4 D=0)
+
+Line  5: "Be Thou my wisdom and Thou my true word"
+  Heard: "Seetheth thou art. Thou my best star."
+  WER: 66.7% (S=4 I=0 D=2)
+
+Line  6: "I ever with Thee and Thou with me Lord"
+  Heard: "Thou my best art. Bye, Dave. Eeyore by eye."
+  WER: 100.0% (S=9 I=0 D=0)
+
+Line  7: "Thou my great Father and I Thy true son"
+  Heard: "Eeyore by eye. Waking or sleeping, thy."
+  WER: 88.9% (S=6 I=0 D=2)
+
+Line  8: "Thou in me dwelling and I with Thee one"
+  Heard: "Waking or sleeping thy presence, my light."
+  WER: 100.0% (S=7 I=0 D=2)
+
+Line  9: "Riches I heed not nor man's empty praise"
+  Heard: "Waking or sleeping thy presence, my light. Be Thou my wisdom and Thou my"
+  WER: 175.0% (S=8 I=6 D=0)
+
+Line 10: "Thou mine inheritance now and always"
+  Heard: "Be thou my wisdom and thou my true word. I am."
+  WER: 166.7% (S=5 I=5 D=0)
+
+Line 11: "Thou and Thou only first in my heart"
+  Heard: "I ever with thee and thou with me"
+  WER: 100.0% (S=8 I=0 D=0)
+
+Line 12: "High King of heaven my treasure Thou art"
+  Heard: "I ever with thee, and thou with me, Lord. Thou my greatness"
+  WER: 137.5% (S=7 I=4 D=0)
+
+============================================================
+Overall WER: 106.9% (108 errors / 101 reference words)
+

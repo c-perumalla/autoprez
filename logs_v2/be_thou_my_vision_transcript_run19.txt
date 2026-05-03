@@ -1,0 +1,50 @@
+LINE | EXPECTED | HEARD | WER
+--------------------------------------------------------------------------------
+  1 | Be Thou my vision O Lord of my heart
+    | Be Thou my Vision
+    | WER: 55.6%
+
+  2 | Naught be all else to me save that Thou art
+    | Be Thou my vision. O Lord. Of my heart. Nah. I'll be all right. Well, Stu, me. Say that thou art. Thou my best art. Bye, Dave. you
+    | WER: 220.0%
+
+  3 | Thou my best thought by day or by night
+    | Eeyore by eye. Waking or sleeping thy presence, my light. Be thou my wisdom and thou my true word.
+    | WER: 200.0%
+
+  4 | Waking or sleeping Thy presence my light
+    | (not reached)
+    | WER: N/A
+
+  5 | Be Thou my wisdom and Thou my true word
+    | (not reached)
+    | WER: N/A
+
+  6 | I ever with Thee and Thou with me Lord
+    | (not reached)
+    | WER: N/A
+
+  7 | Thou my great Father and I Thy true son
+    | (not reached)
+    | WER: N/A
+
+  8 | Thou in me dwelling and I with Thee one
+    | (not reached)
+    | WER: N/A
+
+  9 | Riches I heed not nor man's empty praise
+    | (not reached)
+    | WER: N/A
+
+ 10 | Thou mine inheritance now and always
+    | (not reached)
+    | WER: N/A
+
+ 11 | Thou and Thou only first in my heart
+    | (not reached)
+    | WER: N/A
+
+ 12 | High King of heaven my treasure Thou art
+    | (not reached)
+    | WER: N/A
+

@@ -1,0 +1,50 @@
+LINE | EXPECTED | HEARD | WER
+--------------------------------------------------------------------------------
+  1 | Be Thou my vision O Lord of my heart
+    | Be Thou my vision. O Lord. Of my heart.
+    | WER: 0.0%
+
+  2 | Naught be all else to me save that Thou art
+    | Of my heart. Nah. I'll be all right. Well, still me. Say that thou art.
+    | WER: 90.0%
+
+  3 | Thou my best thought by day or by night
+    | Seetheth thou art. Thou my best art. Bye, Dave. Eeyore by eye. Waking or sleeping, thy presence, my light.
+    | WER: 155.6%
+
+  4 | Waking or sleeping Thy presence my light
+    | Waking or sleeping thy presence, my light. Be thou my way,
+    | WER: 57.1%
+
+  5 | Be Thou my wisdom and Thou my true word
+    | Be thou my wisdom and thou my true word.
+    | WER: 0.0%
+
+  6 | I ever with Thee and Thou with me Lord
+    | Be thou my wisdom and thou my true word. I ever with thee and thou.
+    | WER: 133.3%
+
+  7 | Thou my great Father and I Thy true son
+    | I ever with thee, and thou with me, Lord. The
+    | WER: 100.0%
+
+  8 | Thou in me dwelling and I with Thee one
+    | Thou my great ♪ We'd father and I ♪
+    | WER: 77.8%
+
+  9 | Riches I heed not nor man's empty praise
+    | ♪ I need father and I ♪ ♪ I choose son ♪ Thou in me dwelling, and I with thee. Rich inside heat, not normans empty, pray.
+    | WER: 262.5%
+
+ 10 | Thou mine inheritance now and always
+    | Rich inside, heed not, nor man's empty praise. Thou my lean inheritance, now and always.
+    | WER: 166.7%
+
+ 11 | Thou and Thou only first in my heart
+    | Thou my lean inheritance, now and always. Thou and thou Lee. First in my heart.
+    | WER: 100.0%
+
+ 12 | High King of heaven my treasure Thou art
+    | (not reached)
+    | WER: N/A
+

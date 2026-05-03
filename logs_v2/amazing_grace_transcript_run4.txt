@@ -1,0 +1,66 @@
+LINE | EXPECTED | HEARD | WER
+--------------------------------------------------------------------------------
+  1 | Amazing grace how sweet the sound
+    | Um, hey. You see? How sweet Eat the sins.
+    | WER: 100.0%
+
+  2 | That saved a wretch like me
+    | Eat the sound. That saved a.
+    | WER: 100.0%
+
+  3 | I once was lost but now am found
+    | That saved a wretch Like meeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee I were. And try.
+    | WER: 125.0%
+
+  4 | Was blind but now I see
+    | And trust lost. But now I'm.
+    | WER: 83.3%
+
+  5 | 'Twas grace that taught my heart to fear
+    | But now I'm found. Was blind, but now I see.
+    | WER: 125.0%
+
+  6 | And grace my fears relieved
+    | Was blind, but now I see. Dwars graze. That's it.
+    | WER: 200.0%
+
+  7 | How precious did that grace appear
+    | That taught my heart. To fear
+    | WER: 100.0%
+
+  8 | The hour I first believed
+    | To fear And grace. My fear
+    | WER: 120.0%
+
+  9 | Through many dangers toils and snares
+    | My fears relieved Our precious deed That grace appear The are I first? Believe. Through many dangers, toils,
+    | WER: 266.7%
+
+ 10 | I have already come
+    | Through many dangers, toils, And snares. I have. Oh,
+    | WER: 200.0%
+
+ 11 | 'Tis grace hath brought me safe thus far
+    | Already cursed Tis grace hath brought. Maybe.
+    | WER: 87.5%
+
+ 12 | And grace will lead me home
+    | Me saith thus far And grace will lead me
+    | WER: 83.3%
+
+ 13 | When we've been there ten thousand years
+    | And grace will lead me home When we've been there Tears.
+    | WER: 128.6%
+
+ 14 | Bright shining as the sun
+    | Ten thousand years. Bright shining as.
+    | WER: 100.0%
+
+ 15 | We've no less days to sing God's praise
+    | Bright shining as the sun. We've no less days Two.
+    | WER: 112.5%
+
+ 16 | Than when we first begun
+    | To sing God's praise. Then when?
+    | WER: 120.0%
+

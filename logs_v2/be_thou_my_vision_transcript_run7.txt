@@ -1,0 +1,50 @@
+LINE | EXPECTED | HEARD | WER
+--------------------------------------------------------------------------------
+  1 | Be Thou my vision O Lord of my heart
+    | Be Thou my Vision
+    | WER: 55.6%
+
+  2 | Naught be all else to me save that Thou art
+    | Be Thou my vision. O Lord. Of my heart. Nah. I'll be all right. Well, Stu, me.
+    | WER: 170.0%
+
+  3 | Thou my best thought by day or by night
+    | Well, Stu, me. Say that thou art. That.
+    | WER: 100.0%
+
+  4 | Waking or sleeping Thy presence my light
+    | Thou my best art. Bye, Dave. Eeyore by eye. Waking or sleeping thy presence.
+    | WER: 157.1%
+
+  5 | Be Thou my wisdom and Thou my true word
+    | Waking or sleeping thy presence, my light. Be thou my
+    | WER: 100.0%
+
+  6 | I ever with Thee and Thou with me Lord
+    | Be thou my wisdom and thou my true word. I ever with the end of
+    | WER: 133.3%
+
+  7 | Thou my great Father and I Thy true son
+    | I ever with thee, and thou with me, Lord. The moon
+    | WER: 111.1%
+
+  8 | Thou in me dwelling and I with Thee one
+    | Thou my great ♪ I need father and I love you ♪
+    | WER: 88.9%
+
+  9 | Riches I heed not nor man's empty praise
+    | I need father and I, thy true son. Darwin
+    | WER: 112.5%
+
+ 10 | Thou mine inheritance now and always
+    | Thou in me dwelling, and I wait.
+    | WER: 83.3%
+
+ 11 | Thou and Thou only first in my heart
+    | Thou in me dwelling, and I with thee. Reaching side here
+    | WER: 112.5%
+
+ 12 | High King of heaven my treasure Thou art
+    | Rich inside heat, not normans, empty praise. Thou my
+    | WER: 100.0%
+

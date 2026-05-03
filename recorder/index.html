@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autoprez — Song Recorder</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-secondary: #12121a;
+            --bg-card: #1a1a26;
+            --text-primary: #e8e8f0;
+            --text-secondary: #8888a0;
+            --accent: #6c5ce7;
+            --accent-glow: rgba(108, 92, 231, 0.4);
+            --success: #00d2a0;
+            --danger: #ff4757;
+            --warning: #ffa502;
+            --border: rgba(255, 255, 255, 0.06);
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--accent), #a29bfe);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 0.3rem;
+        }
+
+        .subtitle {
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            margin-bottom: 2rem;
+        }
+
+        .controls {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+        }
+
+        select, button {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.9rem;
+            border: none;
+            border-radius: 10px;
+            padding: 0.7rem 1.4rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        select {
+            background: var(--bg-card);
+            color: var(--text-primary);
+            border: 1px solid var(--border);
+            appearance: none;
+            padding-right: 2rem;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%238888a0' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 0.8rem center;
+        }
+
+        select:focus { outline: 2px solid var(--accent); }
+
+        .btn-record {
+            background: linear-gradient(135deg, var(--danger), #ff6b81);
+            color: white;
+            font-weight: 600;
+            box-shadow: 0 4px 15px rgba(255, 71, 87, 0.3);
+        }
+        .btn-record:hover { transform: translateY(-1px); box-shadow: 0 6px 20px rgba(255, 71, 87, 0.4); }
+        .btn-record:disabled { opacity: 0.4; cursor: not-allowed; transform: none; }
+        .btn-record.recording {
+            animation: pulse-record 1.5s ease-in-out infinite;
+        }
+
+        .btn-transition {
+            background: linear-gradient(135deg, var(--accent), #a29bfe);
+            color: white;
+            font-weight: 600;
+            box-shadow: 0 4px 15px var(--accent-glow);
+            min-width: 200px;
+        }
+        .btn-transition:hover { transform: translateY(-1px); box-shadow: 0 6px 20px var(--accent-glow); }
+        .btn-transition:disabled { opacity: 0.4; cursor: not-allowed; transform: none; }
+
+        .btn-stop {
+            background: var(--bg-card);
+            color: var(--text-secondary);
+            border: 1px solid var(--border);
+        }
+        .btn-stop:hover { background: #222233; color: var(--text-primary); }
+        .btn-stop:disabled { opacity: 0.4; cursor: not-allowed; }
+
+        .btn-download {
+            background: linear-gradient(135deg, var(--success), #55efc4);
+            color: #0a0a0f;
+            font-weight: 600;
+            box-shadow: 0 4px 15px rgba(0, 210, 160, 0.3);
+        }
+        .btn-download:hover { transform: translateY(-1px); }
+        .btn-download:disabled { opacity: 0.4; cursor: not-allowed; transform: none; }
+
+        @keyframes pulse-record {
+            0%, 100% { box-shadow: 0 4px 15px rgba(255, 71, 87, 0.3); }
+            50% { box-shadow: 0 4px 30px rgba(255, 71, 87, 0.6); }
+        }
+
+        .status-bar {
+            display: flex;
+            gap: 1.5rem;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            font-size: 0.82rem;
+            color: var(--text-secondary);
+        }
+
+        .status-bar .timer {
+            font-variant-numeric: tabular-nums;
+            font-weight: 600;
+            color: var(--text-primary);
+            font-size: 1.1rem;
+        }
+
+        .status-bar .line-counter {
+            background: var(--bg-card);
+            padding: 0.3rem 0.8rem;
+            border-radius: 6px;
+            border: 1px solid var(--border);
+        }
+
+        .lyrics-container {
+            width: 100%;
+            max-width: 700px;
+            background: var(--bg-secondary);
+            border-radius: 16px;
+            border: 1px solid var(--border);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            max-height: 60vh;
+            overflow-y: auto;
+        }
+
+        .lyrics-container::-webkit-scrollbar { width: 6px; }
+        .lyrics-container::-webkit-scrollbar-track { background: transparent; }
+        .lyrics-container::-webkit-scrollbar-thumb {
+            background: rgba(108, 92, 231, 0.3);
+            border-radius: 3px;
+        }
+
+        .lyric-line {
+            padding: 0.8rem 1.2rem;
+            margin: 0.3rem 0;
+            border-radius: 10px;
+            font-size: 1.15rem;
+            line-height: 1.6;
+            transition: all 0.35s ease;
+            color: var(--text-secondary);
+            position: relative;
+        }
+
+        .lyric-line.active {
+            background: rgba(108, 92, 231, 0.12);
+            color: var(--text-primary);
+            font-weight: 500;
+            box-shadow: 0 0 20px var(--accent-glow), inset 0 0 20px rgba(108, 92, 231, 0.05);
+            border: 1px solid rgba(108, 92, 231, 0.25);
+        }
+
+        .lyric-line.done {
+            color: rgba(136, 136, 160, 0.4);
+            text-decoration: line-through;
+            text-decoration-color: rgba(136, 136, 160, 0.2);
+        }
+
+        .lyric-line .line-num {
+            position: absolute;
+            left: -0.5rem;
+            top: 50%;
+            transform: translate(-100%, -50%);
+            font-size: 0.7rem;
+            color: rgba(136, 136, 160, 0.3);
+            font-weight: 600;
+        }
+
+        .lyric-line.active .line-num {
+            color: var(--accent);
+        }
+
+        .spacer-line {
+            height: 1rem;
+        }
+
+        .transition-log {
+            width: 100%;
+            max-width: 700px;
+            background: var(--bg-secondary);
+            border-radius: 16px;
+            border: 1px solid var(--border);
+            padding: 1.5rem;
+        }
+
+        .transition-log h3 {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 0.8rem;
+        }
+
+        .transition-log .entries {
+            font-family: 'SF Mono', 'Fira Code', monospace;
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            max-height: 150px;
+            overflow-y: auto;
+        }
+
+        .transition-log .entry {
+            padding: 0.25rem 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .transition-log .entry span.ts {
+            color: var(--success);
+            font-weight: 600;
+        }
+
+        .hint {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            margin-top: 0.5rem;
+            text-align: center;
+        }
+
+        .hint kbd {
+            background: var(--bg-card);
+            padding: 0.15rem 0.45rem;
+            border-radius: 4px;
+            border: 1px solid var(--border);
+            font-size: 0.7rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>🎤 Autoprez Recorder</h1>
+    <p class="subtitle">Record your singing and mark line transitions</p>
+
+    <div class="controls">
+        <select id="songSelect">
+            <option value="amazing_grace">Amazing Grace</option>
+            <option value="be_thou_my_vision">Be Thou My Vision</option>
+            <option value="how_great_thou_art">How Great Thou Art</option>
+        </select>
+        <button class="btn-record" id="btnRecord">⏺ Start Recording</button>
+        <button class="btn-transition" id="btnTransition" disabled>▶ Mark Transition</button>
+        <button class="btn-stop" id="btnStop" disabled>⏹ Stop</button>
+    </div>
+
+    <div class="status-bar">
+        <span class="timer" id="timer">0:00.0</span>
+        <span class="line-counter" id="lineCounter">Line 1 / —</span>
+        <span id="statusText">Ready</span>
+    </div>
+
+    <div class="lyrics-container" id="lyricsContainer">
+        <p style="color: var(--text-secondary); text-align:center; padding: 3rem 0;">Select a song and press Start Recording</p>
+    </div>
+
+    <div class="controls" id="downloadControls" style="display:none;">
+        <button class="btn-download" id="btnDownloadAudio">⬇ Download WAV</button>
+        <button class="btn-download" id="btnDownloadAnswers">⬇ Download Correct Answers</button>
+    </div>
+
+    <div class="transition-log" id="transitionLog" style="display:none;">
+        <h3>Transition Log</h3>
+        <div class="entries" id="logEntries"></div>
+    </div>
+
+    <p class="hint">Press <kbd>Space</kbd> to mark transitions while recording</p>
+
+    <script>
+        // =============================================
+        // EMBEDDED LYRICS (avoids CORS / file:// issues)
+        // =============================================
+        const SONGS = {
+            amazing_grace: {
+                title: "Amazing Grace",
+                lyrics: [
+                    "Amazing grace how sweet the sound",
+                    "That saved a wretch like me",
+                    "I once was lost but now am found",
+                    "Was blind but now I see",
+                    "",
+                    "'Twas grace that taught my heart to fear",
+                    "And grace my fears relieved",
+                    "How precious did that grace appear",
+                    "The hour I first believed",
+                    "",
+                    "Through many dangers toils and snares",
+                    "I have already come",
+                    "'Tis grace hath brought me safe thus far",
+                    "And grace will lead me home",
+                    "",
+                    "When we've been there ten thousand years",
+                    "Bright shining as the sun",
+                    "We've no less days to sing God's praise",
+                    "Than when we first begun"
+                ]
+            },
+            be_thou_my_vision: {
+                title: "Be Thou My Vision",
+                lyrics: [
+                    "Be Thou my vision O Lord of my heart",
+                    "Naught be all else to me save that Thou art",
+                    "Thou my best thought by day or by night",
+                    "Waking or sleeping Thy presence my light",
+                    "",
+                    "Be Thou my wisdom and Thou my true word",
+                    "I ever with Thee and Thou with me Lord",
+                    "Thou my great Father and I Thy true son",
+                    "Thou in me dwelling and I with Thee one",
+                    "",
+                    "Riches I heed not nor man's empty praise",
+                    "Thou mine inheritance now and always",
+                    "Thou and Thou only first in my heart",
+                    "High King of heaven my treasure Thou art"
+                ]
+            },
+            how_great_thou_art: {
+                title: "How Great Thou Art",
+                lyrics: [
+                    "O Lord my God when I in awesome wonder",
+                    "Consider all the worlds Thy hands have made",
+                    "I see the stars I hear the rolling thunder",
+                    "Thy power throughout the universe displayed",
+                    "",
+                    "Then sings my soul my Savior God to Thee",
+                    "How great Thou art how great Thou art",
+                    "Then sings my soul my Savior God to Thee",
+                    "How great Thou art how great Thou art",
+                    "",
+                    "When through the woods and forest glades I wander",
+                    "And hear the birds sing sweetly in the trees",
+                    "When I look down from lofty mountain grandeur",
+                    "And hear the brook and feel the gentle breeze"
+                ]
+            }
+        };
+
+        // =============================================
+        // STATE
+        // =============================================
+        let mediaRecorder = null;
+        let audioChunks = [];
+        let audioContext = null;
+        let recordingStartTime = null;
+        let timerInterval = null;
+        let currentSongKey = 'amazing_grace';
+        let currentLineIndex = 0;    // index into nonEmptyLines
+        let nonEmptyLines = [];      // [{text, originalIndex}]
+        let transitions = [];        // [{lineNum, timestamp}]
+        let isRecording = false;
+        let recordedBlob = null;
+        let wavBlob = null;
+
+        // =============================================
+        // DOM
+        // =============================================
+        const songSelect = document.getElementById('songSelect');
+        const btnRecord = document.getElementById('btnRecord');
+        const btnTransition = document.getElementById('btnTransition');
+        const btnStop = document.getElementById('btnStop');
+        const timerEl = document.getElementById('timer');
+        const lineCounterEl = document.getElementById('lineCounter');
+        const statusText = document.getElementById('statusText');
+        const lyricsContainer = document.getElementById('lyricsContainer');
+        const downloadControls = document.getElementById('downloadControls');
+        const btnDownloadAudio = document.getElementById('btnDownloadAudio');
+        const btnDownloadAnswers = document.getElementById('btnDownloadAnswers');
+        const transitionLog = document.getElementById('transitionLog');
+        const logEntries = document.getElementById('logEntries');
+
+        // =============================================
+        // LYRICS RENDERING
+        // =============================================
+        function loadSong(key) {
+            currentSongKey = key;
+            const song = SONGS[key];
+            nonEmptyLines = [];
+            let lineNum = 0;
+
+            lyricsContainer.innerHTML = '';
+            song.lyrics.forEach((text, idx) => {
+                if (text.trim() === '') {
+                    const spacer = document.createElement('div');
+                    spacer.className = 'spacer-line';
+                    lyricsContainer.appendChild(spacer);
+                } else {
+                    lineNum++;
+                    const el = document.createElement('div');
+                    el.className = 'lyric-line';
+                    el.id = `line-${lineNum}`;
+                    el.innerHTML = `<span class="line-num">${lineNum}</span>${text}`;
+                    lyricsContainer.appendChild(el);
+                    nonEmptyLines.push({ text, lineNum, el });
+                }
+            });
+
+            lineCounterEl.textContent = `Line 1 / ${nonEmptyLines.length}`;
+        }
+
+        function highlightLine(idx) {
+            nonEmptyLines.forEach((l, i) => {
+                l.el.classList.remove('active');
+                if (i < idx) l.el.classList.add('done');
+                else l.el.classList.remove('done');
+            });
+            if (idx < nonEmptyLines.length) {
+                nonEmptyLines[idx].el.classList.add('active');
+                nonEmptyLines[idx].el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+            lineCounterEl.textContent = `Line ${Math.min(idx + 1, nonEmptyLines.length)} / ${nonEmptyLines.length}`;
+        }
+
+        // =============================================
+        // TIMER
+        // =============================================
+        function getElapsed() {
+            if (!recordingStartTime) return 0;
+            return (performance.now() - recordingStartTime) / 1000;
+        }
+
+        function formatTime(s) {
+            const mins = Math.floor(s / 60);
+            const secs = s % 60;
+            return `${mins}:${secs < 10 ? '0' : ''}${secs.toFixed(1)}`;
+        }
+
+        function startTimer() {
+            timerInterval = setInterval(() => {
+                timerEl.textContent = formatTime(getElapsed());
+            }, 100);
+        }
+
+        function stopTimer() {
+            clearInterval(timerInterval);
+        }
+
+        // =============================================
+        // RECORDING
+        // =============================================
+        async function startRecording() {
+            try {
+                const stream = await navigator.mediaDevices.getUserMedia({
+                    audio: {
+                        sampleRate: 16000,
+                        channelCount: 1,
+                        echoCancellation: false,
+                        noiseSuppression: false,
+                        autoGainControl: false
+                    }
+                });
+
+                audioChunks = [];
+                transitions = [];
+                currentLineIndex = 0;
+                recordedBlob = null;
+                wavBlob = null;
+
+                // Try to get the best format - prefer WAV-compatible
+                let mimeType = 'audio/webm;codecs=opus';
+                if (MediaRecorder.isTypeSupported('audio/webm;codecs=opus')) {
+                    mimeType = 'audio/webm;codecs=opus';
+                } else if (MediaRecorder.isTypeSupported('audio/webm')) {
+                    mimeType = 'audio/webm';
+                } else if (MediaRecorder.isTypeSupported('audio/mp4')) {
+                    mimeType = 'audio/mp4';
+                }
+
+                mediaRecorder = new MediaRecorder(stream, { mimeType });
+                mediaRecorder.ondataavailable = (e) => {
+                    if (e.data.size > 0) audioChunks.push(e.data);
+                };
+                mediaRecorder.onstop = onRecordingStop;
+
+                // Also capture raw PCM through AudioContext for WAV export
+                audioContext = new AudioContext({ sampleRate: 16000 });
+                const source = audioContext.createMediaStreamSource(stream);
+                const processor = audioContext.createScriptProcessor(4096, 1, 1);
+                const pcmChunks = [];
+
+                processor.onaudioprocess = (e) => {
+                    const data = e.inputBuffer.getChannelData(0);
+                    pcmChunks.push(new Float32Array(data));
+                };
+
+                source.connect(processor);
+                processor.connect(audioContext.destination);
+
+                // Store pcmChunks ref for later WAV encoding
+                mediaRecorder._pcmChunks = pcmChunks;
+                mediaRecorder._stream = stream;
+                mediaRecorder._audioContext = audioContext;
+                mediaRecorder._processor = processor;
+                mediaRecorder._source = source;
+
+                mediaRecorder.start(250); // collect chunks every 250ms
+                recordingStartTime = performance.now();
+
+                // Mark line 1 at time 0
+                transitions.push({ lineNum: 1, timestamp: 0.0 });
+                addLogEntry(1, 0.0);
+
+                isRecording = true;
+                highlightLine(0);
+                startTimer();
+                updateUI();
+                statusText.textContent = '🔴 Recording...';
+                btnRecord.classList.add('recording');
+            } catch (err) {
+                alert('Microphone access denied or not available.\n\n' + err.message);
+                console.error(err);
+            }
+        }
+
+        function stopRecording() {
+            if (mediaRecorder && mediaRecorder.state !== 'inactive') {
+                mediaRecorder.stop();
+            }
+            isRecording = false;
+            stopTimer();
+            btnRecord.classList.remove('recording');
+            statusText.textContent = 'Processing...';
+        }
+
+        async function onRecordingStop() {
+            // Build WAV from PCM data
+            const pcmChunks = mediaRecorder._pcmChunks;
+            const totalLength = pcmChunks.reduce((sum, c) => sum + c.length, 0);
+            const merged = new Float32Array(totalLength);
+            let offset = 0;
+            for (const chunk of pcmChunks) {
+                merged.set(chunk, offset);
+                offset += chunk.length;
+            }
+
+            wavBlob = encodeWAV(merged, 16000);
+            recordedBlob = wavBlob;
+
+            // Clean up audio nodes
+            try {
+                mediaRecorder._processor.disconnect();
+                mediaRecorder._source.disconnect();
+                mediaRecorder._audioContext.close();
+                mediaRecorder._stream.getTracks().forEach(t => t.stop());
+            } catch (e) { /* ignore */ }
+
+            statusText.textContent = '✅ Recording complete! Download your files below.';
+            downloadControls.style.display = 'flex';
+            updateUI();
+        }
+
+        // =============================================
+        // WAV ENCODER (PCM float32 → 16-bit WAV)
+        // =============================================
+        function encodeWAV(samples, sampleRate) {
+            const buffer = new ArrayBuffer(44 + samples.length * 2);
+            const view = new DataView(buffer);
+
+            // WAV header
+            writeString(view, 0, 'RIFF');
+            view.setUint32(4, 36 + samples.length * 2, true);
+            writeString(view, 8, 'WAVE');
+            writeString(view, 12, 'fmt ');
+            view.setUint32(16, 16, true);           // chunk size
+            view.setUint16(20, 1, true);             // PCM format
+            view.setUint16(22, 1, true);             // mono
+            view.setUint32(24, sampleRate, true);    // sample rate
+            view.setUint32(28, sampleRate * 2, true);// byte rate
+            view.setUint16(32, 2, true);             // block align
+            view.setUint16(34, 16, true);            // bits per sample
+            writeString(view, 36, 'data');
+            view.setUint32(40, samples.length * 2, true);
+
+            // Convert float32 to int16
+            for (let i = 0; i < samples.length; i++) {
+                let s = Math.max(-1, Math.min(1, samples[i]));
+                view.setInt16(44 + i * 2, s < 0 ? s * 0x8000 : s * 0x7FFF, true);
+            }
+
+            return new Blob([buffer], { type: 'audio/wav' });
+        }
+
+        function writeString(view, offset, string) {
+            for (let i = 0; i < string.length; i++) {
+                view.setUint8(offset + i, string.charCodeAt(i));
+            }
+        }
+
+        // =============================================
+        // TRANSITIONS
+        // =============================================
+        function markTransition() {
+            if (!isRecording) return;
+
+            currentLineIndex++;
+            if (currentLineIndex >= nonEmptyLines.length) {
+                // Song finished
+                const ts = parseFloat(getElapsed().toFixed(1));
+                statusText.textContent = '🎉 Song complete! Stopping...';
+                stopRecording();
+                return;
+            }
+
+            const ts = parseFloat(getElapsed().toFixed(1));
+            const lineNum = nonEmptyLines[currentLineIndex].lineNum;
+            transitions.push({ lineNum, timestamp: ts });
+            addLogEntry(lineNum, ts);
+            highlightLine(currentLineIndex);
+        }
+
+        function addLogEntry(lineNum, ts) {
+            transitionLog.style.display = 'block';
+            const entry = document.createElement('div');
+            entry.className = 'entry';
+            entry.innerHTML = `Line ${lineNum}: <span class="ts">${ts.toFixed(1)}s</span> — "${nonEmptyLines[lineNum - 1]?.text || ''}"`;
+            logEntries.appendChild(entry);
+            logEntries.scrollTop = logEntries.scrollHeight;
+        }
+
+        // =============================================
+        // DOWNLOADS
+        // =============================================
+        function downloadFile(blob, filename) {
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = filename;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+
+        btnDownloadAudio.addEventListener('click', () => {
+            if (wavBlob) {
+                downloadFile(wavBlob, `${currentSongKey}.wav`);
+            }
+        });
+
+        btnDownloadAnswers.addEventListener('click', () => {
+            const lines = transitions.map(t => `${t.lineNum} ${t.timestamp.toFixed(1)}`);
+            const text = lines.join('\n') + '\n';
+            const blob = new Blob([text], { type: 'text/plain' });
+            downloadFile(blob, `${currentSongKey}_correct_answers.txt`);
+        });
+
+        // =============================================
+        // UI STATE
+        // =============================================
+        function updateUI() {
+            btnRecord.disabled = isRecording;
+            btnTransition.disabled = !isRecording;
+            btnStop.disabled = !isRecording;
+            songSelect.disabled = isRecording;
+        }
+
+        // =============================================
+        // EVENT LISTENERS
+        // =============================================
+        songSelect.addEventListener('change', (e) => {
+            loadSong(e.target.value);
+            downloadControls.style.display = 'none';
+            logEntries.innerHTML = '';
+            transitionLog.style.display = 'none';
+            timerEl.textContent = '0:00.0';
+            statusText.textContent = 'Ready';
+        });
+
+        btnRecord.addEventListener('click', () => {
+            loadSong(songSelect.value);
+            logEntries.innerHTML = '';
+            downloadControls.style.display = 'none';
+            startRecording();
+        });
+
+        btnTransition.addEventListener('click', markTransition);
+        btnStop.addEventListener('click', stopRecording);
+
+        // Space bar for marking transitions
+        document.addEventListener('keydown', (e) => {
+            if (e.code === 'Space' && isRecording) {
+                e.preventDefault();
+                markTransition();
+            }
+        });
+
+        // Init
+        loadSong('amazing_grace');
+        updateUI();
+    </script>
+</body>
+</html>

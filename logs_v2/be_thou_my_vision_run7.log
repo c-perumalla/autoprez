@@ -1,0 +1,128 @@
+Loaded 12 lyric lines from /Users/calvinperumalla/personal/git/autoprez/be_thou_my_vision.txt
+Params: min_match_pct=60%, trigger_words=0, min_time=4.0s, word_tol=3, update_interval=0.2s
+
+[TARGET] -> Be Thou my vision O Lord of my heart
+Test mode: processing /Users/calvinperumalla/personal/git/autoprez/be_thou_my_vision.wav
+[LIVE] Be.                              [LIVE] Be the                              [LIVE] Be thou.                              [LIVE] Be Thou my                              [LIVE] Be Thou my Vision                              
+---- TRANSITION! fuzzy=100% | Time: 4.2s | t=4.2s ----
+
+[TARGET] -> Naught be all else to me save that Thou art
+[LIVE] Be Thou my vision.                              [DONE] Be Thou my vision.                              
+[LIVE] Oh.                              [LIVE] O Lord.                              [DONE] O Lord.                              
+[LIVE] of my                              [LIVE] Of my heart.                              [DONE] Of my heart.                              
+[LIVE] Yeah.                              [LIVE] Nah.                              [DONE] Nah.                              
+[LIVE] I'm sorry.                              [LIVE] I'll be.                              [LIVE] I'll be your                              [LIVE] I'll be all right.                              [DONE] I'll be all right.                              
+[LIVE] world.                              [LIVE] Well, Steve.                              [LIVE] Well, Stu.                              [LIVE] Well, Stu, me.                              
+---- TRANSITION! seq=60%(6/10) | Time: 10.2s | t=14.4s ----
+
+[TARGET] -> Thou my best thought by day or by night
+[DONE] Well, Stu, me.                              
+[LIVE] Okay.                              [LIVE] Say,                              [LIVE] Say, there,                              [LIVE] Say that thou.                              [LIVE] Say that thou art.                              [DONE] Say that thou art.                              
+[LIVE] That.                              
+---- TRANSITION! seq=67%(6/9) | Time: 4.2s | t=18.6s ----
+
+[TARGET] -> Waking or sleeping Thy presence my light
+[LIVE] Thou.                              [LIVE] Thou my best                              [LIVE] Thou my best.                              [LIVE] Thou my best art.                              [DONE] Thou my best art.                              
+[LIVE] Bye.                              [LIVE] Bye, Dave.                              [DONE] Bye, Dave.                              
+[LIVE] Oh.                              [LIVE] We are back.                              [LIVE] Eeyore bye.                              [LIVE] Eeyore by eye.                              [DONE] Eeyore by eye.                              
+[LIVE] Right.                              [LIVE] Ray.                              [LIVE] Reiki.                              [LIVE] Waking or.                              [LIVE] Waking or sleeping,                              [LIVE] Waking or sleeping, thy.                              [LIVE] Waking or sleeping thy presence.                              
+---- TRANSITION! seq=71%(5/7) | Time: 12.6s | t=31.2s ----
+
+[TARGET] -> Be Thou my wisdom and Thou my true word
+[LIVE] Waking or sleeping thy presence, my.                              [LIVE] Waking or sleeping thy presence, my love,                              [LIVE] Waking or sleeping thy presence, my life.                              [LIVE] Waking or sleeping, thy presence, my life.                              [LIVE] Waking or sleeping thy presence, my light.                              [DONE] Waking or sleeping thy presence, my light.                              
+[LIVE] Yeah.                              [LIVE] The                              [LIVE] Be thou.                              [LIVE] Be thou my                              
+---- TRANSITION! seq=67%(6/9) | Time: 5.4s | t=36.6s ----
+
+[TARGET] -> I ever with Thee and Thou with me Lord
+[LIVE] Be thou my way,                              [LIVE] Be thou my wish,                              [LIVE] Be Thou my wisdom,                              [LIVE] Be Thou my wisdom and                              [LIVE] Be thou my wisdom and I'll                              [LIVE] Be Thou my wisdom and Thou my strength.                              [LIVE] Be thou my wisdom and thou my truth.                              [LIVE] Be thou my wisdom and thou my true word.                              [DONE] Be thou my wisdom and thou my true word.                              
+[LIVE] Uh,                              [LIVE] I am.                              [LIVE] I ever.                              [LIVE] I ever will.                              [LIVE] I ever with thee.                              [LIVE] I ever with the end                              [LIVE] I ever with the end of                              
+---- TRANSITION! seq=67%(6/9) | Time: 10.8s | t=47.4s ----
+
+[TARGET] -> Thou my great Father and I Thy true son
+[LIVE] I ever with thee and thou with me.                              [LIVE] I ever with thee and thou with me, Lord.                              [LIVE] I ever with thee, and thou with me, Lord.                              [DONE] I ever with thee, and thou with me, Lord.                              
+[LIVE] There.                              [LIVE] The moon                              
+---- TRANSITION! seq=67%(6/9) | Time: 4.2s | t=51.6s ----
+
+[TARGET] -> Thou in me dwelling and I with Thee one
+[LIVE] Thou my                              [LIVE] Thou my great                              [DONE] Thou my great                              
+[LIVE] I need food.                              [LIVE] ♪ We'll meet Father and I ♪                              [LIVE] ♪ I need father and I love you ♪                              
+---- TRANSITION! seq=89%(8/9) | Time: 4.2s | t=55.8s ----
+
+[TARGET] -> Riches I heed not nor man's empty praise
+[LIVE] I need father and I, I need.                              [LIVE] I need father and I, I choose.                              [LIVE] I need father and I, I choose son.                              [LIVE] I need father and I, thy true son.                              [DONE] I need father and I, thy true son.                              
+[LIVE] Yeah.                              [LIVE] Now.                              [LIVE] Darwin                              
+---- TRANSITION! seq=62%(5/8) | Time: 4.2s | t=60.0s ----
+
+[TARGET] -> Thou mine inheritance now and always
+[LIVE] Thou in me.                              [LIVE] Thou in me dwell.                              [LIVE] Thou in me dwelling.                              [LIVE] Thou in me dwelling,                              [LIVE] Thou in me dwelling and.                              [LIVE] Thou in me dwelling and I.                              [LIVE] Thou in me dwelling, and I wait.                              
+---- TRANSITION! seq=83%(5/6) | Time: 4.3s | t=64.3s ----
+
+[TARGET] -> Thou and Thou only first in my heart
+[LIVE] Thou in me dwelling, and I with thee.                              [DONE] Thou in me dwelling, and I with thee.                              
+[LIVE] Yeah.                              [LIVE] Really?                              [LIVE] Reaching                              [LIVE] Reaching south                              [LIVE] Reaching side here                              
+---- TRANSITION! seq=62%(5/8) | Time: 4.8s | t=69.1s ----
+
+[TARGET] -> High King of heaven my treasure Thou art
+[LIVE] Reaching side heat now                              [LIVE] Reaching side heed not                              [LIVE] Reaching side heed not nor                              [LIVE] Reaching side heat not normal                              [LIVE] Reaching side heed not nor man's emptiness.                              [LIVE] Reaching side heat, not normal, man's empty.                              [LIVE] Rich inside heat, not normans empty.                              [LIVE] Rich inside heat, not normans, empty prey.                              [LIVE] Rich inside heat, not normans, empty praise.                              [DONE] Rich inside heat, not normans, empty praise.                              
+[LIVE] No.                              [LIVE] Thou.                              [LIVE] Thou my                              
+---- TRANSITION! seq=62%(5/8) | Time: 7.2s | t=76.3s ----
+Finished all lyrics!
+[DONE] Thou my                              
+
+Results written to /Users/calvinperumalla/personal/git/autoprez/test_answers_be_thou_my_vision.txt
+Transcript comparison saved to /Users/calvinperumalla/personal/git/autoprez/logs_v2/be_thou_my_vision_transcript_run7.txt
+============================================================
+WORD ERROR RATE REPORT
+============================================================
+
+Line  1: "Be Thou my vision O Lord of my heart"
+  Heard: "Be Thou my Vision"
+  WER: 55.6% (S=0 I=0 D=5)
+
+Line  2: "Naught be all else to me save that Thou art"
+  Heard: "Be Thou my vision. O Lord. Of my heart. Nah. I'll be all right. Well, Stu, me."
+  WER: 170.0% (S=10 I=7 D=0)
+
+Line  3: "Thou my best thought by day or by night"
+  Heard: "Well, Stu, me. Say that thou art. That."
+  WER: 100.0% (S=8 I=0 D=1)
+
+Line  4: "Waking or sleeping Thy presence my light"
+  Heard: "Thou my best art. Bye, Dave. Eeyore by eye. Waking or sleeping thy presence."
+  WER: 157.1% (S=0 I=9 D=2)
+
+Line  5: "Be Thou my wisdom and Thou my true word"
+  Heard: "Waking or sleeping thy presence, my light. Be thou my"
+  WER: 100.0% (S=4 I=3 D=2)
+
+Line  6: "I ever with Thee and Thou with me Lord"
+  Heard: "Be thou my wisdom and thou my true word. I ever with the end of"
+  WER: 133.3% (S=6 I=6 D=0)
+
+Line  7: "Thou my great Father and I Thy true son"
+  Heard: "I ever with thee, and thou with me, Lord. The moon"
+  WER: 111.1% (S=8 I=2 D=0)
+
+Line  8: "Thou in me dwelling and I with Thee one"
+  Heard: "Thou my great ♪ I need father and I love you ♪"
+  WER: 88.9% (S=5 I=2 D=1)
+
+Line  9: "Riches I heed not nor man's empty praise"
+  Heard: "I need father and I, thy true son. Darwin"
+  WER: 112.5% (S=8 I=1 D=0)
+
+Line 10: "Thou mine inheritance now and always"
+  Heard: "Thou in me dwelling, and I wait."
+  WER: 83.3% (S=4 I=1 D=0)
+
+Line 11: "Thou and Thou only first in my heart"
+  Heard: "Thou in me dwelling, and I with thee. Reaching side here"
+  WER: 112.5% (S=6 I=3 D=0)
+
+Line 12: "High King of heaven my treasure Thou art"
+  Heard: "Rich inside heat, not normans, empty praise. Thou my"
+  WER: 100.0% (S=7 I=1 D=0)
+
+============================================================
+Overall WER: 110.9% (112 errors / 101 reference words)
+

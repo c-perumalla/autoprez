@@ -1,0 +1,16 @@
+{
+  "params": {
+    "match_threshold": 55,
+    "trigger_words": 3,
+    "fuzz_method": "partial_ratio",
+    "update_interval": 0.2
+  },
+  "total_score": -29.5,
+  "per_song_scores": {
+    "amazing_grace": -12.0,
+    "be_thou_my_vision": -8.0,
+    "how_great_thou_art": -9.5
+  },
+  "iteration": 8,
+  "timestamp": "2026-04-16T22:20:04.640072"
+}

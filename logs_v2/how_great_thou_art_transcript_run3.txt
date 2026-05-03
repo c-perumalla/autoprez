@@ -1,0 +1,50 @@
+LINE | EXPECTED | HEARD | WER
+--------------------------------------------------------------------------------
+  1 | O Lord my God when I in awesome wonder
+    | Oh, Lord. O Lord, my God.
+    | WER: 77.8%
+
+  2 | Consider all the worlds Thy hands have made
+    | When I in awesome wonder Conceder all. The world's like a.
+    | WER: 137.5%
+
+  3 | I see the stars I hear the rolling thunder
+    | The worlds thy hands have made. I see.
+    | WER: 100.0%
+
+  4 | Thy power throughout the universe displayed
+    | I see the stars. I hear the rolling thunder. Thy power through.
+    | WER: 183.3%
+
+  5 | Then sings my soul my Savior God to Thee
+    | Thy palm through out. The universe displayed Then sings my soul. Oh my.
+    | WER: 133.3%
+
+  6 | How great Thou art how great Thou art
+    | O my Saviour, God, to Thee. How good
+    | WER: 100.0%
+
+  7 | Then sings my soul my Savior God to Thee
+    | How great thou art! How great thou art, then, sinking.
+    | WER: 111.1%
+
+  8 | How great Thou art how great Thou art
+    | How great thou art, then sings my soul. Allah, save your God.
+    | WER: 100.0%
+
+  9 | When through the woods and forest glades I wander
+    | Almighty Savior God, to thee. How great thou art! How great!
+    | WER: 122.2%
+
+ 10 | And hear the birds sing sweetly in the trees
+    | How great thou art. When to be.
+    | WER: 100.0%
+
+ 11 | When I look down from lofty mountain grandeur
+    | Went through the world. And... And forest glades, I wander, and hear the birds sing sweetly in the tree.
+    | WER: 225.0%
+
+ 12 | And hear the brook and feel the gentle breeze
+    | And forest glades, I wander, and hear the birds sing sweetly in the tree. When I look down So,
+    | WER: 166.7%
+

@@ -1,0 +1,17 @@
+{
+  "params": {
+    "min_match_pct": 60,
+    "trigger_words": 5,
+    "min_time_on_line": 4.0,
+    "word_tolerance": 2,
+    "update_interval": 0.5
+  },
+  "total_score": -26.5,
+  "per_song_scores": {
+    "amazing_grace": -11.0,
+    "be_thou_my_vision": -8.5,
+    "how_great_thou_art": -7.0
+  },
+  "iteration": 28,
+  "timestamp": "2026-04-17T16:01:11.540157"
+}
