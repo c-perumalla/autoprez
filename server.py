@@ -159,4 +159,6 @@ async def stop_matcher():
     return {"status": "not running"}
 
 if __name__ == "__main__":
-    uvicorn.run("server:app", host="0.0.0.0", port=9000, reload=True)
+    # Bind to loopback only: the UI runs on the same machine, and binding
+    # 0.0.0.0 exposes /start, /advance and /stop to everyone on the network.
+    uvicorn.run("server:app", host="127.0.0.1", port=9000, reload=True)

@@ -1,0 +1,74 @@
+LINE | EXPECTED | HEARD | WER
+--------------------------------------------------------------------------------
+  1 | Blessed be Your name in the land that is plentiful
+    | Blessed be your name in the land of.
+    | WER: 30.0%
+
+  2 | Where Your streams of abundance flow blessed be Your name
+    | Blessed be your name in the land that is plentiful, where your sheep are broken.
+    | WER: 130.0%
+
+  3 | Blessed be Your name when I'm found in the desert place
+    | Blessed be your name in the land that is plentiful, where your seed of earth bud is, and be in it. Nine. Blessed be your name when I found in the.
+    | WER: 227.3%
+
+  4 | Though I walk through the wilderness blessed be Your name
+    | Blessed be your name when I found in the darkness, oh I walk through with us to be I'd be on a
+    | WER: 180.0%
+
+  5 | Every blessing You pour out I'll turn back to praise
+    | I'd be running. Every blessing you pour out of. I like to pray
+    | WER: 70.0%
+
+  6 | When the darkness closes in Lord still I will say
+    | I like to pray When the darkness grew in more, still the wills
+    | WER: 90.0%
+
+  7 | Blessed be the name of the Lord blessed be Your name
+    | When the darkness is written more, still I will say Let me name a friend
+    | WER: 127.3%
+
+  8 | Blessed be the name of the Lord blessed be Your glorious name
+    | Blessed be the name of.
+    | WER: 58.3%
+
+  9 | Blessed be Your name when the sun's shining down on me
+    | Blessed be the name of the Lord, Blessed be your glory, your name. Blessed be your name. When the sun shines down, when the sun shines down, when the sun shines down.
+    | WER: 227.3%
+
+ 10 | When the world's all as it should be blessed be Your name
+    | When the sun shines down, when the world starts to shine, the sun is beyond me. I'm not even very good at trying to get this.
+    | WER: 200.0%
+
+ 11 | Blessed be Your name on the road marked with suffering
+    | When the sun shines down, when the world starts to shine, the sun is beyond me. I'm not even very good at trying to get this. It's blessed be morning on the moon. Our kids are free, though they're in.
+    | WER: 370.0%
+
+ 12 | Though there's pain in the offering blessed be Your name
+    | Let's be on him on the road. It's a friend though they in your place be named.
+    | WER: 150.0%
+
+ 13 | Every blessing You pour out I'll turn back to praise
+    | It's blessed be morning on the roof. It's a ferry though they in your hurry. Blessed be name. A blessing you are. Turn back to me.
+    | WER: 230.0%
+
+ 14 | When the darkness closes in Lord still I will say
+    | Turn back to grace When the darkness rose, they say, Lord, still I will stay.
+    | WER: 80.0%
+
+ 15 | Blessed be the name of the Lord blessed be Your name
+    | When the darkness rose, they said, Lord, still I will say. Bloody the name of the road
+    | WER: 136.4%
+
+ 16 | Blessed be the name of the Lord blessed be Your glorious name
+    | Blessed be the name of the Lord, Blessed be your name, Blessed be the Lord, Blessed be the Lord.
+    | WER: 75.0%
+
+ 17 | You give and take away You give and take away
+    | Get them take away.
+    | WER: 80.0%
+
+ 18 | My heart will choose to say Lord blessed be Your name
+    | Give them take away my heart, would you say? Lord bless you.
+    | WER: 100.0%
+

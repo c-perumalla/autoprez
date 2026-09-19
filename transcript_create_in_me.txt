@@ -1,0 +1,34 @@
+LINE | EXPECTED | HEARD | WER
+--------------------------------------------------------------------------------
+  1 | Create in me a clean heart O God
+    | 
+    | WER: 100.0%
+
+  2 | And renew a right spirit within me
+    | And when you write spirit with me
+    | WER: 57.1%
+
+  3 | Create in me a clean heart O God
+    | And when you write spirit within me Creep.
+    | WER: 100.0%
+
+  4 | And renew a right spirit within me
+    | Creating me an annualized spirit within me
+    | WER: 57.1%
+
+  5 | Cast me not away from Thy presence O Lord
+    | Creating me and renewal I'd spread within me I smeared away from my presence.
+    | WER: 133.3%
+
+  6 | And take not Thy holy spirit from me
+    | Ah, smeared away from my presence, Allah, your presence, and take.
+    | WER: 137.5%
+
+  7 | Restore unto me the joy of Thy salvation
+    | Ah, smeared away from my presence, Allah, your presence, and take but that all.
+    | WER: 175.0%
+
+  8 | And renew a right spirit within me
+    | Bless me, but away from my presence, O Lord, and take but that holy and free and will I re. And renew light, see
+    | WER: 328.6%
+
